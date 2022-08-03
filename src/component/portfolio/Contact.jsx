@@ -8,17 +8,17 @@ const Contact = (props) => {
   const [msg, setMsg] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-
+console.log(process.env)
   function submitForm(e) {
     e.preventDefault();
     console.log('submitted');
 
     emailjs
       .sendForm(
-        process.env.EMAIL_SERVICE_ID || 'service_7c01mms',
-        process.env.EMAIL_TEMPLATE_ID || 'template_pfi3mri',
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         form.current,
-        process.env.EMAIL_PUBLIC_KEY || 'wP0EqshSjyk0qXBuy'
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY
       )
       .then(
         (result) => {
