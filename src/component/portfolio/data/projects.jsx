@@ -5,8 +5,8 @@ const Projects = [
         title: 'Decentralized Voting',
         description: 'This is blockchain project that upload files to a decentralized library',
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655427069/fjc8rg8v9eza2tw1fzyj.png',
-        link: 'https://fidelity-school.herokuapp.com/',
-        github: 'https://github.com/TDAS-Dev/BlockGames_Web3_VotingSystm',
+        link: 'https://tdas-library.netlify.app/',
+        github: 'https://github.com/TDAS-Dev/BlockGames_Web3_VotingSystem',
     },
     {
         id: 2,
