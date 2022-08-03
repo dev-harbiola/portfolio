@@ -8,10 +8,9 @@ const Contact = (props) => {
   const [msg, setMsg] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-console.log(process.env)
+
   function submitForm(e) {
     e.preventDefault();
-    console.log('submitted');
 
     emailjs
       .sendForm(
@@ -26,7 +25,7 @@ console.log(process.env)
           setTimeout(() => {
             setMsg('Message sent successfully');
           }, 3000);
-          
+
           console.log(result.text);
         },
         (error) => {
