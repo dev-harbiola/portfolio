@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 
 const Project = (props) => {
   return (
-    <motion.div className="w-full bg-zinc-100">
+    <motion.div className="w-full bg-zinc-100"
+    initial={{opacity: 0}}
+    animate={{opacity: 1, transition: {duration: 0.5}}}
+    exit={{opacity: 0, transition: {duration: 0.5}}}
+    >
       <Container className=" mx-auto sm:px-5 lg:py-[2rem] lg:px-[3.5rem] py-3">
         <h2 className="text-2xl font-bold">Projects</h2>
         <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">

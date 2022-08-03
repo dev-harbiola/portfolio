@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom";
-import Container from "./Container";
-import Sidebar from "./data/sidebar";
-import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
+import { NavLink } from 'react-router-dom';
+import Container from './Container';
+import Sidebar from './data/sidebar';
+import { AiOutlineClose } from 'react-icons/ai';
+import { useState } from 'react';
 
 const SideBar = (props) => {
   const [close, setClose] = useState(false);
   return (
     <div
       className={`${props.className} ${
-        close ? "hidden" : ""
+        close ? 'hidden' : ''
       } lg:w-[200px] sm:w-[100%] lg:h-screen lg:static sm:fixed sm:top-0 bg-zinc-800`}
     >
       <Container className="bg-zinc-800">
@@ -24,16 +24,29 @@ const SideBar = (props) => {
           <ul className="flex flex-col sm:text-center bg-zinc-800">
             {Sidebar.menu.map((item, index) => {
               return (
+                // <Link
+                //   key={index}
+                //   to={item.link}
+                //   className=' p-[12px] block bg-black bg-inherit text-zinc-400 hover:text-zinc-500 my-2'
+                // >
+                //   <div className="flex space-x-2">
+                //     <span className="text-[22px]">{item.icon}</span>
+                //     <span>{item.label}</span>
+                //   </div>
+                // </Link>
                 <NavLink
                   key={index}
                   to={item.link}
                   className={({ isActive }) =>
                     isActive
-                      ? "text-orange-600 block bg-black px-3 py-2 my-2"
-                      : "px-3 py-2 bg-inherit text-zinc-400 my-2"
+                      ? 'text-orange-600 block bg-black p-[12px] my-2'
+                      : 'p-[12px] bg-inherit text-zinc-400 my-2'
                   }
                 >
-                  {item.label}
+                  <div className="flex space-x-2">
+                    <span className="text-[22px]">{item.icon}</span>
+                    <span>{item.label}</span>
+                  </div>
                 </NavLink>
               );
             })}

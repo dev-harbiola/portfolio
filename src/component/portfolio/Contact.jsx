@@ -8,7 +8,11 @@ const Contact = (props) => {
     console.log("submitted");
   }
   return (
-    <motion.div className="w-full bg-zinc-100">
+    <motion.div className="w-full bg-zinc-100"
+    initial={{opacity: 0, transition: {duration: 0.8, ease: "easeInOut"}}}
+    animate={{opacity: 1, transition: {duration: 0.8, ease: "easeInOut"}}}
+    // exit={{opacity: 0, transition: {duration: 0.8, ease: "easeInOut"}}}
+    >
       <Container className=" mx-auto w-full sm:px-5 lg:px-14 py-3">
         <h2 className="text-2xl font-bold">Contact</h2>
         {/* contact page */}
