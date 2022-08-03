@@ -24,14 +24,22 @@ const Contact = (props) => {
           setSuccess(true);
           setTimeout(() => {
             setMsg('Message sent successfully');
-          }, 3000);
-
+            e.target.name.value = ''
+            e.target.email.value = ''
+            e.target.message.value = ''
+            setSuccess(false);
+          }, 10000);
+          
           console.log(result.text);
         },
         (error) => {
           setTimeout(() => {
             msg('Message did not send, try agian');
-          }, 3000);
+            e.target.name.value = ''
+            e.target.email.value = ''
+            e.target.message.value = ''
+            setError(false);
+          }, 10000);
           setError(true);
           console.log(error.text);
         }
@@ -98,7 +106,7 @@ const Contact = (props) => {
                       <input
                         className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                         id="name"
-                        name="user_name"
+                        name="name"
                         type="text"
                         placeholder="Name"
                         required
@@ -110,7 +118,7 @@ const Contact = (props) => {
                         className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
                         id="email"
                         type="email"
-                        name="user_email"
+                        name="email"
                         placeholder="Email"
                         required
                       />
