@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 import Container from "./Container";
 import { FaDownload } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = ({ showSidebar }) => {
   function toggleSidebar() {
@@ -19,6 +20,14 @@ const Header = ({ showSidebar }) => {
             className={`mx-2 text-white text-2xl`}
           />
           <h1 className="text-white text-2xl">Abiola Fasanya</h1>
+        </div>
+        
+        <div className="hidden sm:hidden lg:flex text-white text-xl justify-between">
+          {/* <BrowserRouter> */}
+            <Link to="/about" className="mx-4">About</Link>
+            <Link to="/contact" className="mx-4">Contact</Link>
+            <Link to="/projects" className="mx-4">Project</Link>
+          {/* </BrowserRouter> */}
         </div>
         <div className="sm:hidden lg:flex">
           <a href="https://drive.google.com/file/d/1iQd7itDgFfLY0NXi35mfDV-5ZfiHeQmD/view?usp=sharing">
