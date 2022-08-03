@@ -8,7 +8,7 @@ const Contact = (props) => {
   const [msg, setMsg] = useState('');
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
-
+console.log(process.env)
   function submitForm(e) {
     e.preventDefault();
 
