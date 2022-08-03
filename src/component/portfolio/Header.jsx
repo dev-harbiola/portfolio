@@ -22,11 +22,12 @@ const Header = ({ showSidebar }) => {
           <h1 className="text-white text-2xl">Abiola Fasanya</h1>
         </div>
         
-        <div className="hidden sm:hidden lg:flex text-white text-xl justify-between">
+        <div className="hidden sm:hidden lg:flex text-xl justify-between">
           {/* <BrowserRouter> */}
-            <Link to="/about" className="mx-4">About</Link>
-            <Link to="/contact" className="mx-4">Contact</Link>
-            <Link to="/projects" className="mx-4">Project</Link>
+            <Link to="/" className="mx-4 text-gray-300 hover:text-white">Home</Link>
+            <Link to="/about" className="mx-4 text-gray-300 hover:text-white">About</Link>
+            <Link to="/contact" className="mx-4 text-gray-300 hover:text-white">Contact</Link>
+            <Link to="/projects" className="mx-4 text-gray-300 hover:text-white">Project</Link>
           {/* </BrowserRouter> */}
         </div>
         <div className="sm:hidden lg:flex">

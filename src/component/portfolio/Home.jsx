@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './Container';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
   return (
@@ -23,13 +24,17 @@ const Home = (props) => {
               building web applications and i am always looking to learn new
               technologies.
             </p>
-            <div className="flex space-x-8">
-              <button className="mt-12 rounded-full py-2 px-5 text-gray-200 bg-black hover:bg-gray-900">
-                More about me
-              </button>
-              <button className="sm:hidden md:inline mt-12 rounded-full py-2 px-5 text-black bg-orange-500 hover:bg-orange-600">
-                More about me
-              </button>
+            <div className="flex space-x-8 mt-12">
+              <Link to="/about">
+                <button className="w-[150px] rounded-full py-2 px-5 text-gray-200 bg-black hover:bg-gray-900">
+                  More about me
+                </button>
+              </Link>
+              <Link to="/contact">
+                <button className="sm:hidden w-[150px]  md:inline rounded-full py-2 px-5 text-black bg-orange-500 hover:bg-orange-600">
+                  Contact me
+                </button>
+              </Link>
             </div>
           </div>
           <div className="pt-5">
