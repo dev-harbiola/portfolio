@@ -8,9 +8,9 @@ const About = (props) => {
     <motion.div  className="w-full bg-zinc-100"
     // animate={{transition: {duration: 0.5}}}
   
-    initial={{opacity: 0, transition: {duration: 0.8, ease: "easeInOut"}}}
-    animate={{opacity: 1, transition: {duration: 0.8, ease: "easeInOut"}}}
-    // exit={{opacity: 0, transition: {duration: 0.8, ease: "easeInOut"}}}
+    initial={{opacity: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
+    animate={{opacity: 1, transition: {duration: 0.5, ease: "easeInOut"}}}
+    // exit={{opacity: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
     >
       <Container className="lg:h-[60vh] sm:h-auto container my-10 sm:px-5 lg:px-14 py-3">
         <div className="my-3 space-y-5">

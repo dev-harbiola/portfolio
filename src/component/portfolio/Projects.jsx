@@ -1,22 +1,33 @@
-import Container from "./Container";
-import React from "react";
-import projects from "./data/projects";
-import { motion } from "framer-motion";
+import Container from './Container';
+import React from 'react';
+import projects from './data/projects';
+import { motion } from 'framer-motion';
 
 const Project = (props) => {
   return (
-    <motion.div className="w-full bg-zinc-100"
-    initial={{opacity: 0}}
-    animate={{opacity: 1, transition: {duration: 0.5}}}
-    exit={{opacity: 0, transition: {duration: 0.5}}}
+    <motion.div
+      className="w-full bg-zinc-100"
+      initial={{ x: 300, opacity: 0 }}
+      transition={{
+        duration: 1,
+        ease: 'easeInOut',
+      }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: -300, opacity: 0 }}
     >
       <Container className=" mx-auto sm:px-5 lg:py-[2rem] lg:px-[3.5rem] py-3">
         <h2 className="text-2xl font-bold">Projects</h2>
         <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
-          {projects.map((project) => {
+          {projects.map((project, i) => {
             return (
               <div className="">
-                <div className="flex flex-col items-center justify-center">
+                <motion.div
+                  className="flex flex-col items-center justify-center"
+                  key={i}
+                  initial={{ opacity: 0 }}
+                  transition={{ duration: i, delay: i }}
+                  animate={{ opacity: 1 }}
+                >
                   <img
                     src={project.image}
                     alt={project.title}
@@ -46,7 +57,7 @@ const Project = (props) => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}
