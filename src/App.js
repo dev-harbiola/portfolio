@@ -1,4 +1,4 @@
-import Portfolio from "./component/Porfolio";
+import Portfolio from "./component/Index";
 import Container from "./component/portfolio/Container.jsx";
 
 function App() {

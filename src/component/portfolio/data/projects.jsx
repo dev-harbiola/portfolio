@@ -7,6 +7,7 @@ const Projects = [
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655427069/fjc8rg8v9eza2tw1fzyj.png',
         link: 'https://tdas-library.netlify.app/',
         github: 'https://github.com/TDAS-Dev/BlockGames_Web3_VotingSystem',
+        color: 'bg-emerald-100 hover:bg-emerald-300'
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const Projects = [
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655427234/l6zo4cdsydsg18dcljwu.png',
         link: 'https://tdas-library.netlify.app/',
         github: 'https://github.com/',
+        color: 'bg-blue-100 hover:bg-blue-300'
     },
     {
         id: 3,
@@ -23,6 +25,7 @@ const Projects = [
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655427361/i4w6mq8udp2g8cvoh9lm.png',
         link: 'https://fidelity-school.herokuapp.com/',
         github: '',
+        color: 'bg-orange-100 hover:bg-orange-300'
     },
     {
         id: 4,
@@ -30,7 +33,8 @@ const Projects = [
         description: 'An app where an individual can put their available resources to be swapped by corresponding that has the same intention.',
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655427500/v660kstpjp0mtkuzhwqs.png',
         link: 'https://trade-by-barter.herokuapp.com/',
-        github: 'https://github.com/fastbeetech/Trade-by-Barter-be-pjt-77'
+        github: 'https://github.com/fastbeetech/Trade-by-Barter-be-pjt-77',
+        color: 'bg-purple-100 hover:bg-purple-300'
     },
     {
         id: 5,
@@ -38,7 +42,8 @@ const Projects = [
         description: 'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works in Laravel',
         image: 'http://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
         link: 'https://beemovies.herokuapp.com/',
-        github: 'https://github.com/fastbeetech/livewire-movieapp'
+        github: 'https://github.com/fastbeetech/livewire-movieapp',
+        color: 'bg-green-100 hover:bg-green-300'
     },
 
 ]
