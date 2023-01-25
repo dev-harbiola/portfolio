@@ -21,22 +21,25 @@ const Contact = (props) => {
       .then(
         (result) => {
           setSuccess(true);
+          setMsg('Message sent successfully');
           setTimeout(() => {
-            setMsg('Message sent successfully');
             e.target.name.value = '';
             e.target.email.value = '';
             e.target.message.value = '';
+            setMsg('');
             setSuccess(false);
-          }, 10000);
+          }, 5000);
 
           console.log(result.text);
         },
         (error) => {
+          setError(true);
+          msg('Message did not send, try agian');
           setTimeout(() => {
-            msg('Message did not send, try agian');
             e.target.name.value = '';
             e.target.email.value = '';
             e.target.message.value = '';
+            msg('');
             setError(false);
           }, 10000);
           setError(true);
