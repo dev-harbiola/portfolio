@@ -18,34 +18,32 @@ const Contact = (props) => {
         form.current,
         process.env.REACT_APP_EMAIL_PUBLIC_KEY
       )
-      .then(
-        (result) => {
-          setSuccess(true);
-          setMsg('Message sent successfully');
-          setTimeout(() => {
-            e.target.name.value = '';
-            e.target.email.value = '';
-            e.target.message.value = '';
-            setMsg('');
-            setSuccess(false);
-          }, 5000);
+      .then((result) => {
+        setSuccess(true);
+        setMsg('Message sent successfully');
+        setTimeout(() => {
+          e.target.name.value = '';
+          e.target.email.value = '';
+          e.target.message.value = '';
+          setMsg('');
+          setSuccess(false);
+        }, 5000);
 
-          console.log(result.text);
-        },
-        (error) => {
-          setError(true);
-          msg('Message did not send, try agian');
-          setTimeout(() => {
-            e.target.name.value = '';
-            e.target.email.value = '';
-            e.target.message.value = '';
-            msg('');
-            setError(false);
-          }, 10000);
-          setError(true);
-          console.log(error.text);
-        }
-      );
+        console.log(result.text);
+      })
+      .catch((error) => {
+        setError(true);
+        msg('Message did not send, try agian');
+        setTimeout(() => {
+          e.target.name.value = '';
+          e.target.email.value = '';
+          e.target.message.value = '';
+          msg('');
+          setError(false);
+        }, 5000);
+        setError(true);
+        console.log(error.text);
+      });
   }
   return (
     <motion.div
