@@ -12,7 +12,7 @@ const menus = [
   { id: 1, to: 'home', text: 'Home' },
   { id: 2, to: 'project', text: 'Project' },
   { id: 3, to: 'contact', text: 'Contact' },
-  { id: 4, to: 'aboutme', text: 'About Me' },
+  { id: 4, to: 'aboutme', text: 'About' },
   {
     id: 5,
     to: 'https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link',
