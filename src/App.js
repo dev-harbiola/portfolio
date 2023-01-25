@@ -3,7 +3,7 @@ import Container from "./component/portfolio/Container.jsx";
 
 function App() {
   return (
-    <Container className="font-sans">
+    <Container className="font-montserrat">
       <Portfolio />
     </Container>
   );

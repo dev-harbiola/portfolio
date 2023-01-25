@@ -1,54 +1,47 @@
-import React from "react";
-import Container from "./Container";
-import { FaDownload } from "react-icons/fa";
-import { motion } from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
+import Image from '../../pics.png';
 
 const About = (props) => {
   return (
-    <motion.div  className="w-full bg-zinc-100"
-    // animate={{transition: {duration: 0.5}}}
-  
-    initial={{opacity: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
-    animate={{opacity: 1, transition: {duration: 0.5, ease: "easeInOut"}}}
-    // exit={{opacity: 0, transition: {duration: 0.5, ease: "easeInOut"}}}
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
+      animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
     >
-      <Container className="lg:h-[60vh] sm:h-auto container my-10 sm:px-5 lg:px-14 py-3">
-        <div className="my-3 space-y-5">
-          <h2 className="text-2xl font-bold">About Me</h2>
-          <p className="">
-            I am Abiola Fasanya, from Lagos, Nigeria. I have 3 years of
-            experience in web development. I design and develop user
-            interfaces, testing, debugging and maintaining web applications.
-            Proven ability to work with a team to deliver a product that is
-            intended to be useful and easy to use.
+      <div className="my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto md:flex-row items-center">
+        <div className="flex flex-col">
+          <img
+            src={Image}
+            alt="my pics"
+            className="border-4 h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
+          />
+          <span className="my-2 text-center font-semibold text-lg">
+            Abiola Fasanya
+          </span>
+        </div>
+        <div className="md:w-[65%]">
+          <p className="sm:text-center sm:p-2 md:text-justify">
+            It is my pleasure to introduce myself as Abiola Fasanya, a Nigerian
+            from Lagos. It has been three years since I have worked in the field
+            of web development. Designing and developing user interfaces,
+            testing, debugging and maintaining web applications are some of the
+            things that I do. Working well in a team and delivering a product
+            that is reliable and easy to use is one of the skills you need to be
+            successful in this role.
           </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 items-center">
-          <div className="my-3 space-y-5">
-            <h2 className="text-2xl font-bold">Contact Details</h2>
-            <p>
-              <span>Lagos</span>
-              <br />
-              <span>Nigeria</span>
-              <br />
-              <span>+234 8102307473</span>
-              <br />
-              <span>harbiola78@gmail.com</span>
-              <br />
-            </p>
-          </div>
-
-          <div className="mt-7">
-            <a href="https://drive.google.com/file/d/1iQd7itDgFfLY0NXi35mfDV-5ZfiHeQmD/view?usp=sharing">
-              <button className="inline-flex rounded-full py-2 px-7 bg-orange-500 hover:bg-orange-600">
-                <FaDownload />
-                <span className="ml-2">Download CV</span>
-              </button>
+          <motion.div className='sm:mx-auto md:mx-0 sm:w-1/2 md:w-auto mt-4 '
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <a
+              href="https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link"
+              target={'_top'}
+              className="md:inline-block py-3 px-5 bg-black hover:bg-black/80 rounded-full text-white sm:text-center"
+            >
+              View my resume
             </a>
-          </div>
+          </motion.div>
         </div>
-      </Container>
+      </div>
     </motion.div>
   );
 };

@@ -10,6 +10,6 @@
     @apply bg-gray-50/50 
   }
   .navbar {
-    @apply bg-white/50 flex space-x-8 justify-center items-center mx-auto mt-10 px-5 py-3 rounded-full shadow-sm w-fit md:px-7 overflow-hidden backdrop:opacity-50;
+    @apply bg-white/50 flex sm:space-x-3 md:space-x-8 justify-center items-center mx-auto sm:mt-5 md:mt-10 px-5 py-3 rounded-full shadow-sm w-fit md:px-7 overflow-hidden backdrop:opacity-50;
   }
 }
