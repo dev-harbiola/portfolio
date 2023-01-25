@@ -47,13 +47,12 @@ const Contact = (props) => {
   }
   return (
     <motion.div
-      className="w-full bg-zinc-100"
+      className="w-full"
       initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
       exit={{ opacity: 0 }}
     >
       <Container className=" mx-auto w-full sm:px-5 lg:px-14 py-3">
-        <h2 className="text-2xl font-bold">Contact</h2>
         {/* contact page */}
         <div className="flex">
           <div className="w-full">

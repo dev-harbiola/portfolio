@@ -1,9 +1,9 @@
-import Portfolio from "./component/Porfolio.jsx";
+import Portfolio from "./component/Porfolio";
 import Container from "./component/portfolio/Container.jsx";
 
 function App() {
   return (
-    <Container className="bg-zinc-800 h-screen w-screen font-sans">
+    <Container className="font-sans">
       <Portfolio />
     </Container>
   );

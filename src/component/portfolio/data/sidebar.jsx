@@ -7,6 +7,12 @@ class Sidebar {
     { link: '/projects', label: 'Projects', icon: <FaHome /> },
     { link: '/contact', label: 'Contact', icon: <FaEnvelope /> },
   ];
+
+  static menus = [
+    { link: '/', label: 'Home', icon: <FaHome /> },
+    { link: '/about', label: 'About', icon: <FaUser /> },
+    { link: '/projects', label: 'Projects', icon: <FaHome /> },
+  ]
 }
 
 export default Sidebar;
