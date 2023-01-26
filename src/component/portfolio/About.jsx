@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from '../../pics.png';
+import Image from '../../me.png';
 
 const About = (props) => {
   return (
@@ -14,7 +14,7 @@ const About = (props) => {
           <img
             src={Image}
             alt="my pics"
-            className="border-4 h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
+            className="object-cover obje  border-4 h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
           />
           <span className="my-2 text-center font-semibold text-lg">
             Abiola Fasanya
