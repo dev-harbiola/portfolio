@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import Image from '../../Get in touch-cuate.svg'
 
 const Contact = (props) => {
   const form = useRef();
@@ -53,14 +54,14 @@ const Contact = (props) => {
     >
       {/* contact page */}
       <div className="w-full">
-        <div className="flex sm:flex-col md:flex-row items-center">
+        <div className="flex sm:flex-col md:flex-row lg:justify-between">
           <img
-            src="http://res.cloudinary.com/fastbeetech/image/upload/v1655461507/l9loumi6chnaht1kjurk.gif"
+            src={Image}
             alt="contact"
-            className="w-full h-auto"
+            className="w-1/2 sm:mx-auto h-auto"
           />
 
-          <div className="w-full bg-gray-300 md:p-2 rounded-b-md">
+          <div className="w-full h-auto sm:pt-[2rem] md:pt-[6rem]  bg-gray-300 md:p-2">
             <h3 className="text-center text-2xl mb-2">
               Have an idea or question?
             </h3>
@@ -72,7 +73,7 @@ const Contact = (props) => {
                 href="mailto:harbiola78@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-orange-500 hover:bg-orange-600 rounded py-2 px-5"
+                className="bg-black hover:bg-black/80 text-white rounded py-2 px-5"
               >
                 Email
               </a>
@@ -132,7 +133,7 @@ const Contact = (props) => {
                 </div>
                 <div>
                   <button
-                    className="bg-orange-500 hover:bg-orange-600 rounded py-2 px-5"
+                    className="bg-black hover:bg-black/80 text-white rounded py-2 px-5"
                     type="submit"
                   >
                     Send
