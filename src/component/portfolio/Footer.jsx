@@ -20,14 +20,14 @@ const Footer = () => {
         <div className="flex sm:space-x-2 md:space-x-3 items-center">
           {socials.map((social, index) => (
             <div key={index} className="">
-              <a
-                href={social.url}
+              <button
+                onClick={() => window.open(social.url)}
                 className="flex my-4 text-zinc-400 hover:text-zinc-500"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <social.icon className="md:text-2xl" />
-              </a>
+              </button>
             </div>
           ))}
         </div>

@@ -16,7 +16,7 @@ const Social = [
   { name: "Github", url: "https://github.com/fastbeetech", icon: BsGithub },
   {
     name: "Linkedin",
-    url: "https://ng.linkedin.com/in/abiola-fasanya-66a095129",
+    url: "https://www.linkedin.com/in/abiola-fasanya",
     icon: BsLinkedin,
   },
   {

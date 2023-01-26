@@ -8,7 +8,7 @@ const About = (props) => {
       className="w-full"
       initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
-    >
+    >cover
       <div className="my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto md:flex-row items-center">
         <div className="flex flex-col">
           <img
