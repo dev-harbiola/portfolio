@@ -8,13 +8,13 @@ const About = (props) => {
       className="w-full"
       initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
-    >cover
+    >
       <div className="my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto md:flex-row items-center">
         <div className="flex flex-col">
           <img
             src={Image}
             alt="my pics"
-            className="object-cover obje  border-4 h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
+            className="object-cover shadow-sm h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
           />
           <span className="my-2 text-center font-semibold text-lg">
             Abiola Fasanya
