@@ -21,7 +21,7 @@ const Social = [
   },
   {
     name: "Email",
-    url: "mailto:harbiola78@gmail.com",
+    url: "mailto:harbiola78@gmail.com?Let_discuss_business",
     icon: MdOutlineAttachEmail,
   },
 ];
