@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import Image from '../../Get in touch-cuate.svg'
+import Image from '../../asset/Get in touch-cuate.svg'
 
 const Contact = (props) => {
   const form = useRef();
@@ -61,7 +61,7 @@ const Contact = (props) => {
             className="w-1/2 sm:mx-auto h-auto"
           />
 
-          <div className="w-full h-auto sm:pt-[2rem] md:pt-[6rem]  bg-gray-300 md:p-2">
+          <div className="dark:bg-gray-800 w-full h-auto sm:pt-[2rem] md:pt-[6rem]  bg-gray-300 md:p-2">
             <h3 className="text-center text-2xl mb-2">
               Have an idea or question?
             </h3>

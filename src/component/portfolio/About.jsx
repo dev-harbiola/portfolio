@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from '../../me.png';
+import Image from '../../asset/me.png';
 
 const About = (props) => {
   return (
@@ -16,7 +16,7 @@ const About = (props) => {
             alt="my pics"
             className="object-cover shadow-sm h-72 w-72 rounded-full border-spacing-1 shrink-0 mx-auto"
           />
-          <span className="my-2 text-center font-semibold text-lg">
+          <span className="my-2 text-center font-semibold text-lg dark:text-gray-100">
             Abiola Fasanya
           </span>
         </div>
@@ -35,7 +35,7 @@ const About = (props) => {
             <a
               href="https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link"
               target={'_top'}
-              className="md:inline-block py-3 px-5 bg-black hover:bg-black/80 rounded-full text-white sm:text-center"
+              className="md:inline-block py-3 px-5 dark:bg-gray-900 bg-black hover:bg-black/80 rounded-full dark:text-gray-100 text-white sm:text-center"
             >
               View my resume
             </a>

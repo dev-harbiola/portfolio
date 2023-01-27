@@ -1,18 +1,18 @@
 import React from 'react';
-import Moon from '../moon..svg';
-import Planet from '../planet-saturn-svgrepo-com.svg';
-import Rocket from '../rocket-innovation-space-svgrepo-com.svg';
+import Moon from '../asset/moon..svg';
+import Planet from '../asset/planet-saturn-svgrepo-com.svg';
+import Rocket from '../asset/rocket-innovation-space-svgrepo-com.svg';
 import Contact from './portfolio/Contact';
 import { Link } from 'react-scroll';
-import Projects from './portfolio/data/projects';
+import Projects from './data/projects';
 import Footer from './portfolio/Footer';
 import About from './portfolio/About';
 
 const menus = [
   { id: 1, to: 'home', text: 'Home' },
-  { id: 2, to: 'project', text: 'Project' },
-  { id: 3, to: 'contact', text: 'Contact' },
-  { id: 4, to: 'aboutme', text: 'About' },
+  { id: 2, to: 'aboutme', text: 'About' },
+  { id: 3, to: 'project', text: 'Project' },
+  { id: 4, to: 'contact', text: 'Contact' },
   {
     id: 5,
     to: 'https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link',
@@ -21,6 +21,7 @@ const menus = [
 ];
 
 const Index = () => {
+
   //   function handleSetInactive(e) {
   //     console.log(e);
   //   }
@@ -28,9 +29,12 @@ const Index = () => {
   //     console.log(e);
   //   }
   return (
-    <div className="bg-gray-50/50 min-h-full font-montserrat">
-      <header className="fixed top-0 w-full z-10">
-        <nav className="navbar z-10">
+    <div
+      className={` dark:bg-gray-800 dark:text-gray-100 bg-gray-50/50 min-h-full font-montserrat`}
+    >
+      
+      <header className="dark:bg-gray-800 fixed top-0 w-full z-10">
+        <nav className="navbar z-10 dark:text-gray-300 dark:bg-gray-900">
           {menus.map((menu) => (
             <>
               {menu.id !== 5 && (
@@ -78,12 +82,15 @@ const Index = () => {
           </h2>
           <img src={Rocket} alt="" className="mt-[2rem] sm:w-[4rem] mx-auto" />
         </div>
-        <div name="aboutme" className="sm:text-center md:text-left mt-5 py-5 bg-white">
+        <div
+          name="aboutme"
+          className="sm:text-center md:text-left mt-5 py-5 dark:bg-gray-700 dark:text-gray-100 bg-white"
+        >
           <h2 className="px-14  py-5 text-2xl font-semibold ml-2">About me</h2>
           <About />
         </div>
         <div name="project" className="mt-5">
-          <h2 className="sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
+          <h2 className="dark:text-gray-100 dar sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
             Featured Projects
           </h2>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -105,8 +112,10 @@ const Index = () => {
             ))}
           </div>
         </div>
-        <div name="contact" className="mt-5">
-          <h2 className="sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">Contact</h2>
+        <div name="contact" className="pt-5 dark:bg-gray-400">
+          <h2 className="dark:text-gray-800 sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
+            Contact
+          </h2>
           <Contact />
         </div>
       </main>
