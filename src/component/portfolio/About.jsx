@@ -9,7 +9,7 @@ const About = (props) => {
       initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
     >
-      <div className="my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto md:flex-row items-center">
+      <div className="area">
         <div className="flex flex-col">
           <img
             src={Image}
@@ -42,6 +42,30 @@ const About = (props) => {
           </motion.div>
         </div>
       </div>
+      <section className=''>
+      <h2 className="px-14 py-5 text-2xl font-semibold ml-2">Experience</h2>
+        <div className="timeline-area">
+        <div className='card text-left'>
+          <h2 className='text-lg font-semibold'>Full-Stack Developer</h2>
+          <h3 className='text-md font-medium'>Fasbeetech</h3>
+          <h4>2021 - 2022</h4>
+        </div><div className='card text-left'>
+          <h2 className='text-lg font-semibold'>Backend Developer (Tutor)</h2>
+          <h3 className='text-md font-medium'>Zuri (Internship)</h3>
+          <h4>May 2022 - Aug 2022</h4>
+        </div>
+        <div className='card text-left'>
+          <h2 className='text-lg font-semibold'>Backend Developer</h2>
+          <h3 className='text-md font-medium'>KodeCamp (Internship) </h3>
+          <h4>2021 - 2022</h4>
+        </div>
+        <div className='card text-left'>
+          <h2 className='text-lg font-semibold'>Frontend Developer</h2>
+          <h3 className='text-md font-medium'>Globatech Institute</h3>
+          <h4>2019 - 2020</h4>
+        </div> 
+      </div>
+      </section>
     </motion.div>
   );
 };

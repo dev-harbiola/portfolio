@@ -54,7 +54,7 @@ const Contact = (props) => {
     >
       {/* contact page */}
       <div className="w-full">
-        <div className="flex sm:flex-col md:flex-row lg:justify-between">
+        <div className="dark:bg-gray-400 flex sm:flex-col md:flex-row lg:justify-between">
           <img
             src={Image}
             alt="contact"

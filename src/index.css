@@ -7,9 +7,27 @@
 
 @layer components {
   body {
-    @apply bg-gray-50/50 
+    @apply bg-gray-50/50;
   }
   .navbar {
     @apply bg-white/80 flex sm:space-x-3 md:space-x-8 justify-center items-center mx-auto sm:mt-12 md:mt-10 px-5 py-3 rounded-full shadow-sm w-fit md:px-7 overflow-hidden;
+  }
+  .area {
+    @apply my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto md:flex-row items-center;
+  }
+  .timeline-area {
+    @apply odd:bg-gray-200 border-l-2 border-black dark:border-gray-300 sm:mx-5 sm:px-8 md:pl-12 my-3 flex sm:flex-col md:justify-between md:w-4/5 md:mx-auto
+  }
+  .card {
+    @apply relative text-base transition-all ease-in-out bg-white h-32 rounded p-5 mb-5 border border-gray-500 dark:bg-gray-700 dark:text-gray-100 hover:bg-green-100 dark:hover:bg-gray-500 dark:hover:border-gray-200 hover:border-emerald-500 hover:before:border-emerald-500 hover:after:border-r-emerald-500;
+    line-height: 1.7;
+  }
+  .card:before {
+    @apply block top-[1rem] sm:left-[-2.6rem] md:left-[-3.6rem] rounded-full w-[1rem] h-[1rem] bg-gray-100 dark:bg-gray-200 border-2 border-black dark:border-gray-300 absolute;
+    content: '';
+  }
+  .card:after {
+    @apply absolute border-8 w-0 h-0 border-solid top-[1rem] left-[-1rem] border-l-transparent border-t-transparent border-r-black dark:border-r-gray-300 peer-hover:border-r-emerald-500 border-b-transparent;
+    content: '';
   }
 }

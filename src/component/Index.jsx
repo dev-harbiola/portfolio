@@ -86,7 +86,7 @@ const Index = () => {
           name="aboutme"
           className="sm:text-center md:text-left mt-5 py-5 dark:bg-gray-700 dark:text-gray-100 bg-white"
         >
-          <h2 className="px-14  py-5 text-2xl font-semibold ml-2">About me</h2>
+          <h2 className="px-14 py-5 text-2xl font-semibold ml-2">About me</h2>
           <About />
         </div>
         <div name="project" className="mt-5">
@@ -112,8 +112,8 @@ const Index = () => {
             ))}
           </div>
         </div>
-        <div name="contact" className="pt-5 dark:bg-gray-400">
-          <h2 className="dark:text-gray-800 sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
+        <div name="contact" className="pt-5">
+          <h2 className="dark:text-gray-100 sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
             Contact
           </h2>
           <Contact />

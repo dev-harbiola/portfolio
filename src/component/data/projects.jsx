@@ -6,7 +6,7 @@ const Projects = [
       'This is blockchain project that upload files to a decentralized library',
     image:
       'http://res.cloudinary.com/fastbeetech/image/upload/v1655427069/fjc8rg8v9eza2tw1fzyj.png',
-    link: 'https://tdas-library.netlify.app/',
+    link: 'https://lambent-banoffee-332cea.netlify.app',
     github: 'https://github.com/TDAS-Dev/BlockGames_Web3_VotingSystem',
     color:
       'bg-emerald-100 hover:bg-emerald-300 dark:bg-gray-600 dark:text-gray-100',
@@ -36,6 +36,29 @@ const Projects = [
   },
   {
     id: 4,
+    title: 'Learning Mangement System',
+    description:
+      'This web application features include, assessment, course options, exam portal, library, post, etc ',
+    image:
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1675262053/my-uploads/Screenshot_from_2023-02-01_15-30-07_njzs22.png',
+    link: 'https://lms-next-typescript.vercel.app',
+    github: '',
+    color:
+      'bg-orange-100 hover:bg-orange-300  dark:bg-gray-700 dark:text-gray-100',
+  },
+  {
+    id: 5,
+    title: 'Fast Ecommerce',
+    description: 'This is a fashion and clothing e-commerce system',
+    image:
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1675262055/my-uploads/Screenshot_from_2023-02-01_15-31-54_wyaz5e.png',
+    link: 'https://next-ecommerce-tau-liard.vercel.app/',
+    github: '',
+    color:
+      'bg-orange-100 hover:bg-orange-300  dark:bg-gray-600 dark:text-gray-100',
+  },
+  {
+    id: 6,
     title: 'Trade By Barter',
     description:
       'An app where an individual can put their available resources to be swapped by corresponding that has the same intention.',
@@ -47,7 +70,7 @@ const Projects = [
       'bg-purple-100 hover:bg-purple-300 dark:bg-gray-700 dark:text-gray-100',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Movie Listing with TMDB API',
     description:
       'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works in Laravel',
