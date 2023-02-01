@@ -7,6 +7,7 @@ import { Link } from 'react-scroll';
 import Projects from './data/projects';
 import Footer from './portfolio/Footer';
 import About from './portfolio/About';
+import Skills from './portfolio/Skills';
 
 const menus = [
   { id: 1, to: 'home', text: 'Home' },
@@ -32,14 +33,13 @@ const Index = () => {
     <div
       className={` dark:bg-gray-800 dark:text-gray-100 bg-gray-50/50 min-h-full font-montserrat`}
     >
-      
       <header className="dark:bg-gray-800 fixed top-0 w-full z-10">
         <nav className="navbar z-10 dark:text-gray-300 dark:bg-gray-900">
-          {menus.map((menu) => (
-            <>
+          {menus.map((menu, index) => (
+            <div key={index}>
               {menu.id !== 5 && (
                 <Link
-                  key={menu.id}
+                  key={index}
                   to={menu.to}
                   activeClass="active"
                   spy={true}
@@ -64,7 +64,7 @@ const Index = () => {
                   {menu.text}
                 </a>
               )}
-            </>
+            </div>
           ))}
         </nav>
       </header>
@@ -89,7 +89,14 @@ const Index = () => {
           <h2 className="px-14 py-5 text-2xl font-semibold ml-2">About me</h2>
           <About />
         </div>
-        <div name="project" className="mt-5">
+        <div
+          name="skills"
+          className="px-14 sm:text-center md:text-left dark:bg-gray-800 dark:text-gray-100 bg-white"
+        >
+          <h2 className="px-14 py-5 text-2xl font-semibold ml-2">Skills</h2>
+          <Skills />
+        </div>
+        <div name="project" className="mt-5 py-2 dark:bg-gray-700">
           <h2 className="dark:text-gray-100 dar sm:text-center md:text-left px-14 text-2xl my-2 font-semibold ml-2">
             Featured Projects
           </h2>

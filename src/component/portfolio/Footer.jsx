@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="dark:bg-gray-900 bg-black py-5 px-5 ">
       <div className="text-zinc-100 lg:w-3/4 lg:mx-auto text-center py-3">
-        <text className="text-2xl underline">Quote</text>
+        <span className="text-2xl underline">Quote</span>
         <p>
           “If you are working on something that you really care about, you don’t
           have to be pushed. The vision pulls you.”

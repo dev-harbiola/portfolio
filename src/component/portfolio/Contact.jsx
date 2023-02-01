@@ -79,7 +79,7 @@ const Contact = (props) => {
               </a>
               <a
                 href="
-                  https://www.linkedin.com/in/abiola-fasanya-b9a8b917b/"
+                https://www.linkedin.com/in/abiola-fasanya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-zinc-500 hover:bg-zinc-600 text-dark rounded py-2 px-5"

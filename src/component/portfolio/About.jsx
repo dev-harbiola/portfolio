@@ -45,21 +45,21 @@ const About = (props) => {
       <section className=''>
       <h2 className="px-14 py-5 text-2xl font-semibold ml-2">Experience</h2>
         <div className="timeline-area">
-        <div className='card text-left'>
+        <div className='timeline-card text-left'>
           <h2 className='text-lg font-semibold'>Full-Stack Developer</h2>
           <h3 className='text-md font-medium'>Fasbeetech</h3>
           <h4>2021 - 2022</h4>
-        </div><div className='card text-left'>
+        </div><div className='timeline-card text-left'>
           <h2 className='text-lg font-semibold'>Backend Developer (Tutor)</h2>
           <h3 className='text-md font-medium'>Zuri (Internship)</h3>
           <h4>May 2022 - Aug 2022</h4>
         </div>
-        <div className='card text-left'>
+        <div className='timeline-card text-left'>
           <h2 className='text-lg font-semibold'>Backend Developer</h2>
           <h3 className='text-md font-medium'>KodeCamp (Internship) </h3>
           <h4>2021 - 2022</h4>
         </div>
-        <div className='card text-left'>
+        <div className='timeline-card text-left'>
           <h2 className='text-lg font-semibold'>Frontend Developer</h2>
           <h3 className='text-md font-medium'>Globatech Institute</h3>
           <h4>2019 - 2020</h4>
