@@ -28,8 +28,8 @@ const Projects = [
     description:
       'This is a school management system for assignments, grades, and more',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655427361/i4w6mq8udp2g8cvoh9lm.png',
-    link: 'https://fidelity-school.herokuapp.com/',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1675312149/my-uploads/Screenshot_from_2023-02-02_05-28-25_ee3vfs.png',
+    link: 'https://submission-portal.herokuapp.com/',
     github: '',
     color:
       'bg-orange-100 hover:bg-orange-300  dark:bg-gray-600 dark:text-gray-100',
