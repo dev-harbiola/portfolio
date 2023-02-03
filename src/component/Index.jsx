@@ -57,7 +57,7 @@ const Index = () => {
       <section className="fixed bottom-5 w-full my-2 z-10">
         <nav
           className={
-            'sm:flex sm:space-x-12 sm:max-w-sm sm:w-fit md:w-fit md:max-w-6xl py-5 mx-auto navbar dark:text-gray-300 dark:bg-gray-900'
+            'sm:flex sm:space-x-12 sm:max-w-sm sm:w-fit md:w-fit md:max-w-6xl md:py-5 mx-auto navbar dark:text-gray-300 dark:bg-gray-900'
           }
         >
           {Menu.menus.map((menu, index) => (
@@ -71,7 +71,7 @@ const Index = () => {
               duration={500}
               ignoreCancelEvents={false}
               spyThrottle={500}
-              className="sm:text-3xl md:text-xl cursor-pointer p-2"
+              className="sm:text-2xl md:text-xl cursor-pointer p-2"
               title={menu.text}
               activeStyle={theme ? darkStyle : lightStyle}
             >
@@ -109,7 +109,6 @@ const Index = () => {
           name="aboutme"
           className="sm:text-center md:text-left mt-5 py-5 dark:bg-gray-700 dark:text-gray-100 bg-white"
         >
-          <h2 className="px-24 py-5 text-2xl font-semibold ml-2">About me</h2>
           <About />
         </div>
         <div
@@ -167,3 +166,4 @@ const darkStyle = {
 };
 
 export default Index;
+

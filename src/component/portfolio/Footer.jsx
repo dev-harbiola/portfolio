@@ -3,7 +3,7 @@ import socials from '../data/social';
 
 const Footer = () => {
   return (
-    <footer className="dark:bg-gray-900 bg-black py-5 px-5 ">
+    <footer className="sm:pb-32 sm:pt-5 md:pb-5 dark:bg-gray-900 bg-black py-5 px-5 ">
       <div className="text-zinc-100 lg:w-3/4 lg:mx-auto text-center py-3">
         <span className="text-2xl underline">Quote</span>
         <p>
