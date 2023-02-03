@@ -38,7 +38,9 @@ const Index = () => {
     >
       <header className="w-full fixed top-0 py-5 bg-white dark:bg-gray-800  shadow-sm z-10">
         <nav className="flex justify-between items-center sm:mx-5 md:mx-10 lg:max-w-6xl lg:mx-auto my-0 dark:bg-gray-800">
-          <h2 className="text-2xl"><span>{'<'}</span>Harbiola<span>{' />'}</span></h2>
+          <h2 className="text-2xl">
+            <span>{'<'}</span>Harbiola<span>{' />'}</span>
+          </h2>
           <div className={''}>
             {theme ? (
               <MdOutlineLightMode
@@ -93,7 +95,7 @@ const Index = () => {
               Abiola Fasanya
             </h1>
             <span className="text-red-500 pb-8 h-12 font-semibold">{text}</span>
-            button
+
             <div className="flex my-5 space-x-4">
               <Button
                 activeClass="active"
@@ -106,19 +108,6 @@ const Index = () => {
                 offset={50}
                 duration={500}
               />
-              {/* <Button
-                to="aboutme"
-                about='about me page'
-
-                onClick={() =>
-                  window.open(
-                    'https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link'
-                  )
-                }
-                className="py-3 px-7 bg-transparent dark:text-gray-100 dark:hover:bg-gray-700 dark:border-gray-500 border text-black transition-all hover:text-gray-50 border-black hover:bg-black"
-              >
-                About me
-              </Button> */}
               <button
                 onClick={() =>
                   window.open(
