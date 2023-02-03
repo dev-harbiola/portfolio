@@ -57,7 +57,7 @@ const Index = () => {
       <section className="fixed bottom-5 w-full my-2 z-10">
         <nav
           className={
-            'sm:flex sm:space-x-12 sm:max-w-sm sm:w-4/5 md:w-fit md:max-w-6xl py-5 mx-auto navbar dark:text-gray-300 dark:bg-gray-900'
+            'sm:flex sm:space-x-12 sm:max-w-sm sm:w-fit md:w-fit md:max-w-6xl py-5 mx-auto navbar dark:text-gray-300 dark:bg-gray-900'
           }
         >
           {Menu.menus.map((menu, index) => (
@@ -71,8 +71,9 @@ const Index = () => {
               duration={500}
               ignoreCancelEvents={false}
               spyThrottle={500}
-              className="sm:text-3xl md:text-xl cursor-pointer"
+              className="sm:text-3xl md:text-xl cursor-pointer p-2"
               title={menu.text}
+              activeStyle={theme ? darkStyle : lightStyle}
             >
               <menu.icon />
             </Link>
@@ -130,7 +131,10 @@ const Index = () => {
               >
                 <img src={project.image} alt={project.title} />
                 <div className="flex justify-between items-center">
-                  <a href={project.link} className={`py-3 px-5 rounded-sm`}>
+                  <a
+                    href={project.link}
+                    className={`py-3 px-5 rounded-sm bg-[#374151]`}
+                  >
                     View Project
                   </a>
                   <a href={project?.github} className={` py-3 px-5 rounded-sm`}>
@@ -151,6 +155,18 @@ const Index = () => {
       <Footer />
     </div>
   );
+};
+
+const lightStyle = {
+  background: '#374151',
+  color: '#fff',
+  borderRadius: '25px',
+};
+
+const darkStyle = {
+  background: '#374151',
+  color: '#fff',
+  borderRadius: '25px',
 };
 
 export default Index;
