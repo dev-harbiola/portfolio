@@ -131,10 +131,7 @@ const Index = () => {
               >
                 <img src={project.image} alt={project.title} />
                 <div className="flex justify-between items-center">
-                  <a
-                    href={project.link}
-                    className={`py-3 px-5 rounded-sm bg-[#374151]`}
-                  >
+                  <a href={project.link} className={`py-3 px-5 rounded-sm`}>
                     View Project
                   </a>
                   <a href={project?.github} className={` py-3 px-5 rounded-sm`}>
