@@ -12,8 +12,8 @@ const Footer = () => {
         </p>
         <div className="italic"> - Steve Jobs - </div>
       </div>
-      <div className="bg-gray-200 h-px"></div>
-      <div className="flex justify-between items-center w-full lg:px-5 text-white">
+      <div className="md:max-w-6xl md:mx-auto bg-gray-200 h-px"></div>
+      <div className="md:mx-auto md:max-w-6xl flex justify-between items-center w-full lg:px-5 text-white">
         <p className="sm:text-[14px] md:text-md text-white md:py-2">
           All right reserved - {new Date().getFullYear()}
         </p>

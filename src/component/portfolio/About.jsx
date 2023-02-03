@@ -21,21 +21,17 @@ const About = (props) => {
           </span>
         </div>
         <div className="md:w-[65%]">
-          <p className="sm:text-center sm:p-2 md:text-justify">
-            It is my pleasure to introduce myself as Abiola Fasanya, a Nigerian
-            from Lagos. It has been three years since I have worked in the field
-            of web development. Designing and developing user interfaces,
-            testing, debugging and maintaining web applications are some of the
-            things that I do. Working well in a team and delivering a product
-            that is reliable and easy to use is one of the skills you need to be
-            successful in this role.
+          <p className="sm:text-center text-xl sm:p-2 md:p-px md:text-justify">
+              Abiola is a highly competent full-stack web developer with a lot of
+              versatility, flexibility, and a passion for technology and the
+              ability to make ideas come true.
           </p>
           <motion.div className='sm:mx-auto md:mx-0 sm:w-1/2 md:w-auto mt-4 '
           initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <a
               href="https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link"
               target={'_top'}
-              className="md:inline-block py-3 px-5 dark:bg-gray-900 bg-black hover:bg-black/80 rounded-full dark:text-gray-100 text-white sm:text-center"
+              className="md:inline-block py-3 px-5 dark:bg-gray-900 bg-black hover:bg-black/80 rounded-sm dark:text-gray-100 text-white sm:text-center"
             >
               View my resume
             </a>
@@ -43,7 +39,7 @@ const About = (props) => {
         </div>
       </div>
       <section className=''>
-      <h2 className="px-14 py-5 text-2xl font-semibold ml-2">Experience</h2>
+      <h2 className="px-24 py-5 text-2xl font-semibold ml-2">Experience</h2>
         <div className="timeline-area">
         <div className='timeline-card text-left'>
           <h2 className='text-lg font-semibold'>Full-Stack Developer</h2>

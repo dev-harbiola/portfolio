@@ -10,8 +10,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ['League Spartan', 'sans-serif'],
+        lobster: ['Lobster', 'cursive'],
         serif: ['Georgia', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },

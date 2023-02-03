@@ -53,7 +53,7 @@ const Contact = (props) => {
       animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
     >
       {/* contact page */}
-      <div className="w-full">
+      <div className="w-full max-w-6xl mx-auto">
         <div className="dark:bg-gray-400 flex sm:flex-col md:flex-row lg:justify-between">
           <img
             src={Image}
