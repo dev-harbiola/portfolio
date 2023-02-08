@@ -23,13 +23,13 @@ const Index = () => {
       'I am Full-Stack Web Developer',
       'I am Frontend Web Developer',
       'I am a Backend Developer',
-      'Im a DevOps Engineer',
+      'I am a DevOps Engineer',
     ],
     loop: true,
     cursorStyle: '_',
     typeSpeed: 100,
     deleteSpeed: 100,
-    delaySpeed: 800,
+    delaySpeed: 0,
   });
 
   return (
@@ -99,7 +99,7 @@ const Index = () => {
             <h1 className="sm:text-2xl md:text-4xl font-lobster">
               Abiola Fasanya
             </h1>
-            <span className="text-red-500 pb-8 h-12 font-semibold" title='what i do'>{text}</span>
+            <span className="text-red-600 dark:text-red-500 pb-8 h-12 font-semibold" title='what i do'>{text}</span>
 
             <div className="flex my-5 space-x-4">
               <Button

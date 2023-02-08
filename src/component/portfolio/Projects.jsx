@@ -10,7 +10,7 @@ const Projects = () => {
         className={`${project.color} p-5 transition-all ease-in-out delay-200`}
         title={project.title}
       >
-        <img src={project.image} alt={project.title} />
+        <img src={project.image} className='w-full h-auto' alt={project.title} />
         <div className="flex justify-between items-center">
           <a href={project.link} className={`py-3 px-5 rounded-sm`} title='view demo'>
             View Project
