@@ -92,14 +92,14 @@ const Index = () => {
           name="home"
           className="relative lg:w-[65%] lg:mx-auto py-[5rem] p-5"
         >
-          <img src={Planet} alt="" className="sm:w-[3.5rem] ml-auto" />
-          <img src={Moon} alt="" className="left-5 sm:w-[3rem]" />
-          <div className="flex items-center justify-center flex-col space-y -2">
+          <img src={Planet} alt="planet" className="sm:w-[3.5rem] ml-auto" />
+          <img src={Moon} alt="moon" className="left-5 sm:w-[3rem]" />
+          <div className="flex items-center justify-center flex-col space-y-2">
             <h2 className="text-base">Hello, I'm</h2>
             <h1 className="sm:text-2xl md:text-4xl font-lobster">
               Abiola Fasanya
             </h1>
-            <span className="text-red-500 pb-8 h-12 font-semibold">{text}</span>
+            <span className="text-red-500 pb-8 h-12 font-semibold" title='what i do'>{text}</span>
 
             <div className="flex my-5 space-x-4">
               <Button
@@ -115,7 +115,7 @@ const Index = () => {
                 duration={500}
               />
               <button
-              title='download cv button'
+              title='download cv'
                 onClick={() =>
                   window.open(
                     'https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link'
