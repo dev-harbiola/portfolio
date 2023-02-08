@@ -6,7 +6,7 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     const storage = JSON.parse(localStorage.getItem('theme'));
     if (storage == null || storage === undefined) {
-      localStorage.setItem('theme', true);
+      localStorage.setItem('theme', false);
       return JSON.parse(localStorage.getItem('theme'));
     }
     return storage;

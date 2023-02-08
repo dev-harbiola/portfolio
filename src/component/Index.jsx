@@ -108,6 +108,7 @@ const Index = () => {
                 type="submit"
                 value="About me"
                 to="aboutme"
+                title='about me'
                 spy={true}
                 smooth={true}
                 offset={50}
