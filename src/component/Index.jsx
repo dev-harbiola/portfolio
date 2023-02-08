@@ -37,8 +37,8 @@ const Index = () => {
     title='portfolio page'
       className={` dark:bg-gray-800 dark:text-gray-100 bg-gray-50/50 min-h-full`}
     >
-      <header title='header section' className="w-full fixed top-0 py-5 bg-white dark:bg-gray-800  shadow-sm z-10">
-        <div title='navigation section 1' className="flex justify-between items-center sm:mx-5 md:mx-10 lg:max-w-6xl lg:mx-auto my-0 dark:bg-gray-800">
+      <header title='heading' className="w-full fixed top-0 py-5 bg-white dark:bg-gray-800  shadow-sm z-10">
+        <div title='heading' className="flex justify-between items-center sm:mx-5 md:mx-10 lg:max-w-6xl lg:mx-auto my-0 dark:bg-gray-800">
           <h2 title='username' className="text-2xl">
             {'<'}Harbiola{' />'}
           </h2>
