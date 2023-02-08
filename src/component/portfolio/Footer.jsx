@@ -26,7 +26,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <social.icon className="md:text-2xl" />
+                <social.icon className="md:text-2xl" tit  le={social.name}/>
               </button>
             </div>
           ))}

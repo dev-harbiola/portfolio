@@ -4,7 +4,6 @@ import Planet from '../asset/planet-saturn-svgrepo-com.svg';
 import Rocket from '../asset/rocket-innovation-space-svgrepo-com.svg';
 import Contact from './portfolio/Contact';
 import { Link, Button } from 'react-scroll';
-import Projects from './data/projects';
 import Footer from './portfolio/Footer';
 import About from './portfolio/About';
 import Skills from './portfolio/Skills';
@@ -12,6 +11,7 @@ import { useTypewriter } from 'react-simple-typewriter';
 import { MdOutlineLightMode, MdOutlineDarkMode } from 'react-icons/md';
 import useTheme from '../hooks/useTheme';
 import Menu from './data/menus';
+import Projects from './portfolio/Projects';
 
 const Index = () => {
   const { toggleTheme, theme } = useTheme();
@@ -148,25 +148,7 @@ const Index = () => {
           <h2 title='featured project' className="dark:text-gray-100 dar sm:text-center md:text-left px-24 text-2xl my-2 font-semibold">
             Featured Projects
           </h2>
-          <div title='projects' className="max-w-6xl px-5 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {Projects.map((project, id) => (
-              <div
-                key={id}
-                className={`${project.color} p-5 transition-all ease-in-out delay-200`}
-                title={project.title}
-              >
-                <img src={project.image} alt={project.title} />
-                <div className="flex justify-between items-center">
-                  <a href={project.link} className={`py-3 px-5 rounded-sm`} title='view demo'>
-                    View Project
-                  </a>
-                  <a href={project?.github} className={` py-3 px-5 rounded-sm`} title='visit github'>
-                    Github
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Projects />
         </div>
         <div name="contact" title='contact section' className="pt-5">
           <h2 className="dark:text-gray-100 sm:text-center md:text-left px-24 text-2xl my-2 font-semibold ml-2">

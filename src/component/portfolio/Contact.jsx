@@ -82,7 +82,7 @@ const Contact = (props) => {
                 https://www.linkedin.com/in/abiola-fasanya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-500 hover:bg-zinc-600 text-dark rounded py-2 px-5"
+                className="bg-gray-500 hover:bg-gray-600 text-gray-50 rounded py-2 px-5"
               >
                 LinkedIn
               </a>
