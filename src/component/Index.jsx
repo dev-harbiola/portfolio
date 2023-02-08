@@ -29,7 +29,7 @@ const Index = () => {
     cursorStyle: '_',
     typeSpeed: 100,
     deleteSpeed: 100,
-    delaySpeed: 0,
+    delaySpeed: 1000,
   });
 
   return (
