@@ -38,7 +38,7 @@ const Index = () => {
       className={` dark:bg-gray-800 dark:text-gray-100 bg-gray-50/50 min-h-full`}
     >
       <header title='header section' className="w-full fixed top-0 py-5 bg-white dark:bg-gray-800  shadow-sm z-10">
-        <nav title='navigation section 1' className="flex justify-between items-center sm:mx-5 md:mx-10 lg:max-w-6xl lg:mx-auto my-0 dark:bg-gray-800">
+        <div title='navigation section 1' className="flex justify-between items-center sm:mx-5 md:mx-10 lg:max-w-6xl lg:mx-auto my-0 dark:bg-gray-800">
           <h2 title='username' className="text-2xl">
             {'<'}Harbiola{' />'}
           </h2>
@@ -57,10 +57,10 @@ const Index = () => {
               />
             )}
           </div>
-        </nav>
+        </div>
       </header>
       <section className="fixed bottom-5 w-full my-2 z-10">
-        <div
+        <menu
           title='menu navigation'
           className={
             'sm:flex sm:space-x-12 sm:max-w-sm sm:w-fit md:w-fit md:max-w-6xl md:py-5 mx-auto navbar dark:text-gray-300 dark:bg-gray-900'
@@ -84,7 +84,7 @@ const Index = () => {
               <menu.icon />
             </Link>
           ))}
-        </div>
+        </menu>
       </section>
       <main className="-z-10" title='main content'>
         <div
