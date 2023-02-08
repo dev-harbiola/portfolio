@@ -75,7 +75,7 @@ const Projects = [
     description:
       'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works in Laravel',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
     link: 'https://beemovies.herokuapp.com/',
     github: 'https://github.com/fastbeetech/livewire-movieapp',
     color:
