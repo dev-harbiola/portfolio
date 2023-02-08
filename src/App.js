@@ -1,14 +1,14 @@
 import React from 'react';
 import Portfolio from './component/Index';
 import Container from './component/portfolio/Container.jsx';
-import AnimatedCursor from 'react-animated-cursor';
+// import AnimatedCursor from 'react-animated-cursor';
 import useTheme from './hooks/useTheme';
 
 function App() {
   const { theme } = useTheme();
   return (
     <Container className={`${theme && 'dark'} dark:bg-gray-800 font-poppins`}>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={12}
         outerSize={30}
         color="193, 11, 111"
@@ -30,7 +30,7 @@ function App() {
           'Link',
           '.link',
         ]}
-      />
+      /> */}
 
       <Portfolio />
     </Container>
