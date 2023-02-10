@@ -82,7 +82,7 @@ const Contact = (props) => {
                 https://www.linkedin.com/in/abiola-fasanya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-zinc-500 hover:bg-zinc-600 text-dark rounded py-2 px-5"
+                className="bg-gray-500 hover:bg-gray-600 text-gray-50 rounded py-2 px-5"
               >
                 LinkedIn
               </a>
@@ -108,7 +108,7 @@ const Contact = (props) => {
                     name="name"
                     type="text"
                     required
-                    placeholder="Name"
+                    placeholder="your name"
                   />
                 </div>
                 <div>
@@ -118,7 +118,7 @@ const Contact = (props) => {
                     id="email"
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="you@mail.com"
                     required
                   />
                 </div>
@@ -126,6 +126,7 @@ const Contact = (props) => {
                   <label htmlFor="message">Message</label>
                   <textarea
                     name="message"
+                    id='message'
                     required
                     placeholder="Drop a message"
                     className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"

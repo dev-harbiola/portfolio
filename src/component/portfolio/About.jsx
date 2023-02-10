@@ -6,8 +6,10 @@ const About = (props) => {
   return (
     <motion.div
       className="w-full"
-      initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
-      animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // initial={{ opacity: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
+      // animate={{ opacity: 1, transition: { duration: 0.5, ease: 'easeInOut' } }}
     >
       <div className="area">
         <div className="flex flex-col">
@@ -26,8 +28,7 @@ const About = (props) => {
               versatility, flexibility, and a passion for technology and the
               ability to make ideas come true.
           </p>
-          <motion.div className='sm:mx-auto md:mx-0 sm:w-1/2 md:w-auto mt-4 '
-          initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <div className='sm:mx-auto md:mx-0 sm:w-1/2 md:w-auto mt-4'>
             <a
               href="https://drive.google.com/file/d/1rSp2b7m76BjLpc_JBvUrzWr_U8dGdvf-/view?usp=share_link"
               target={'_top'}
@@ -35,7 +36,7 @@ const About = (props) => {
             >
               View my resume
             </a>
-          </motion.div>
+          </div>
         </div>
       </div>
       <section className=''>

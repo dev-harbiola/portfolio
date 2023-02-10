@@ -19,7 +19,7 @@ const Skills = () => {
                 className="card flex items-center flex-col justify-center"
               >
                 {skill.name}
-                <img src={skill.image} alt={skill.name} className="w-12" />
+                <img src={skill.image} alt={skill.name} className="w-12 h-12" />
               </div>
             </React.Fragment>
           ))}

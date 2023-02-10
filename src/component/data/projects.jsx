@@ -5,7 +5,7 @@ const Projects = [
     description:
       'This is blockchain project that upload files to a decentralized library',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655427069/fjc8rg8v9eza2tw1fzyj.png',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1655427069/fjc8rg8v9eza2tw1fzyj.png',
     link: 'https://lambent-banoffee-332cea.netlify.app',
     github: 'https://github.com/TDAS-Dev/BlockGames_Web3_VotingSystem',
     color:
@@ -17,7 +17,7 @@ const Projects = [
     description:
       'This is blockchain project that upload files to a decentralized library',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655427234/l6zo4cdsydsg18dcljwu.png',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1655427234/l6zo4cdsydsg18dcljwu.png',
     link: 'https://tdas-library.netlify.app/',
     github: 'https://github.com/',
     color: 'bg-blue-100 hover:bg-blue-300 dark:bg-gray-700 dark:text-gray-100',
@@ -63,7 +63,7 @@ const Projects = [
     description:
       'An app where an individual can put their available resources to be swapped by corresponding that has the same intention.',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655427500/v660kstpjp0mtkuzhwqs.png',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1655427500/v660kstpjp0mtkuzhwqs.png',
     link: 'https://trade-by-barter.herokuapp.com/',
     github: 'https://github.com/fastbeetech/Trade-by-Barter-be-pjt-77',
     color:
@@ -75,7 +75,7 @@ const Projects = [
     description:
       'A movie app created with livewire, tailwindCss and Alpine Js to understand how livewire works in Laravel',
     image:
-      'http://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
+      'https://res.cloudinary.com/fastbeetech/image/upload/v1655455013/eucpzpansg1gusacakez.png',
     link: 'https://beemovies.herokuapp.com/',
     github: 'https://github.com/fastbeetech/livewire-movieapp',
     color:

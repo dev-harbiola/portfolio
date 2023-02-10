@@ -25,8 +25,11 @@ const Footer = () => {
                 className="flex my-4 text-zinc-400 hover:text-zinc-500"
                 target="_blank"
                 rel="noopener noreferrer"
+                id={social.name}
+                name={social.name}
+                title={social.name}
               >
-                <social.icon className="md:text-2xl" />
+                <social.icon className="md:text-2xl" title={social.name}/>
               </button>
             </div>
           ))}
