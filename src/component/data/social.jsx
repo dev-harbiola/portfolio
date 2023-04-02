@@ -20,7 +20,7 @@ const Social = [
     url: 'https://twitter.com/harbiola78',
     icon: BsTwitter,
   },
-  { name: 'Github', url: 'https://github.com/fastbeetech', icon: BsGithub },
+  { name: 'Github', url: 'https://github.com/dev-harbiola', icon: BsGithub },
   {
     name: 'Linkedin',
     url: 'https://www.linkedin.com/in/abiola-fasanya',
