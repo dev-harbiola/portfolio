@@ -40,13 +40,25 @@
         align-items: center;
     }
 
+    .group_icon {
+        display: flex;
+
+        .theme_icon {
+            display: none;
+        }
+    }
+
     @include sm() {
         max-width: 100%;
         .hidden {
             display: none;
         }
-        .active {
+        .group_icon {
             display: flex;
+    
+            .theme_icon {
+                display: flex;
+            }
         }
         .menu {
             display: flex;
@@ -83,6 +95,9 @@
 .light {
     background-color: rgba(map-get($gray-variant, "100"), 0.9);
     color: set-text-color(map-get($gray-variant, "100"));
+    .menu_link {
+        color: map-get($gray-variant, '100');
+    }
     width: 100%;
 }
 

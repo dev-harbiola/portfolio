@@ -15,13 +15,19 @@ const Navbar = () => {
       <menu className={styles.menu}>
         <div className={styles.menu_logo}>
           <div className={styles.menu_title}>{"<Habiola />"}</div>
-          <Button
-            color="error"
-            className={styles.menu_icon}
-            onClick={toggleSidebar}
-          >
-            <MenuIcon />
-          </Button>
+          <div className={styles.group_icon}>
+            <Button className={styles.theme_icon} onClick={() => toggleTheme()}>
+              {!dark && <DarkModeIcon color="action" />}
+              {dark && <LightModeIcon color="error" />}
+            </Button>
+            <Button
+              color="error"
+              className={styles.menu_icon}
+              onClick={toggleSidebar}
+            >
+              <MenuIcon />
+            </Button>
+          </div>
         </div>
         <div className={`${openSideBar ? styles.menu_link : styles.hidden}`}>
           <Link to={"/"}>Home</Link>
@@ -29,7 +35,7 @@ const Navbar = () => {
           <Link to={"/"}>Projects</Link>
           <Link to={"/"}>Skill</Link>
           <Link to={"/"}>Blog</Link>
-          <Button onClick={() => toggleTheme()}>
+          <Button className={styles.hidden} onClick={() => toggleTheme()}>
             {!dark && <DarkModeIcon color="action" />}
             {dark && <LightModeIcon color="error" />}
           </Button>
