@@ -1,4 +1,4 @@
-import { Button, Link } from "@mui/material";
+import { Link } from "@mui/material";
 import { Socials } from "../data/socials";
 import useApp from "../hooks/useApp";
 import styles from "./Footer.module.scss";
