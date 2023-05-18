@@ -7,12 +7,13 @@ import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PreviewIcon from "@mui/icons-material/Preview";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   const { dark } = useApp();
   return (
-    <div
-      id="projects"
+    <Element
+      name="projects"
       className={`${styles.projects} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="My Projects" subTitle="This are some of my projects" />
@@ -54,7 +55,7 @@ const Projects = () => {
           </Box>
         ))}
       </Box>
-    </div>
+    </Element>
   );
 };
 

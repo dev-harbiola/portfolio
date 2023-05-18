@@ -7,12 +7,13 @@ import webMaintain from "../../assets/web-maintenance.png";
 import DbMange from "../../assets/database-management.png";
 import webHost from "../../assets/hosting-services.png";
 import support from "../../assets/technical-support.png";
+import { Element } from "react-scroll";
 
 const Services = () => {
   const { dark } = useApp();
   return (
-    <div
-      id="services"
+    <Element
+      name="services"
       className={`${styles.services} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="My Services" subTitle="What I can offer" />
@@ -60,7 +61,7 @@ const Services = () => {
           </p>
         </Box>
       </div>
-    </div>
+    </Element>
   );
 };
 

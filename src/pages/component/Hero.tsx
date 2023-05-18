@@ -3,6 +3,7 @@ import useApp from '../../hooks/useApp';
 import styles from './styles.module.scss';
 import { useTypewriter } from 'react-simple-typewriter';
 import Abiola from '../../assets/Abiola.jpg';
+import { Element } from "react-scroll";
 
 const Hero = () => {
     const {dark} = useApp()
@@ -22,7 +23,7 @@ const Hero = () => {
         delaySpeed: 1000,
       });
   return (
-    <div id="home" className={`${styles.hero} ${dark ? styles.dark : styles.light}`}>
+    <Element name="home" className={`${styles.hero} ${dark ? styles.dark : styles.light}`}>
        <Box className={styles.hero_align}>
        <Box  className={styles.hero_text}>
        <h5>Hello I'm</h5>
@@ -34,7 +35,7 @@ const Hero = () => {
           <img src={Abiola} alt="image" />
        </Box>
        </Box>
-    </div>
+    </Element>
   )
 }
 

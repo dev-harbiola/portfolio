@@ -7,6 +7,14 @@ import { Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-scroll";
 
+const navLinks = [
+  { id: 1, name: "About", to: "about" },
+  { id: 2, name: "Services", to: "services" },
+  { id: 3, name: "Skills", to: "skills" },
+  { id: 4, name: "Projects", to: "projects" },
+  { id: 5, name: "Contact", to: "contact" },
+];
+
 const Navbar = () => {
   const { dark, toggleTheme, openSideBar, toggleSidebar } = useApp();
   console.log("sidebar is open?", openSideBar);
@@ -15,7 +23,9 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${dark ? styles.dark : styles.light}`}>
       <menu className={styles.menu}>
         <div className={styles.menu_logo}>
-          <div className={styles.menu_title}>{"<Habiola />"}</div>
+          <Link to="home" className={styles.menu_title}>
+            {"<Habiola />"}
+          </Link>
           <div className={styles.group_icon}>
             <Button className={styles.theme_icon} onClick={() => toggleTheme()}>
               {!dark && <DarkModeIcon color="action" />}
@@ -31,12 +41,22 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`${openSideBar ? styles.menu_link : styles.hidden}`}>
-          <Link to={"home"}>Home</Link>
-          <Link to={"about"}>About</Link>
-          <Link to={"projects"}>Projects</Link>
-          <Link to={"services"}>Services</Link>
-          <Link to={"skill"}>Skill</Link>
-          <Link to={"blog"}>Blog</Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.id}
+              className={styles.link}
+              // onClick={() => toggleSidebar()}
+              activeClass={styles.active_link}
+              to={link.to}
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              isDynamic={true}
+            >
+              {link.name}
+            </Link>
+          ))}
           <Button className={styles.hidden} onClick={() => toggleTheme()}>
             {!dark && <DarkModeIcon color="action" />}
             {dark && <LightModeIcon color="error" />}

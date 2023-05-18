@@ -7,6 +7,7 @@ import styles from "./styles.module.scss";
 import contactUs from "../../assets/contactUs.jpg";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Element } from "react-scroll";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -56,8 +57,8 @@ const Contact = () => {
   };
 
   return (
-    <section
-    id="contact"
+    <Element
+    name="contact"
       className={`${styles.contact} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="Contact Me" subTitle="Get in touch" />
@@ -155,7 +156,7 @@ const Contact = () => {
         </Box>
       </div>
       <ToastContainer />
-    </section>
+    </Element>
   );
 };
 

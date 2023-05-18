@@ -14,10 +14,8 @@ import styles from "./styles.module.scss";
 import useApp from "../../hooks/useApp";
 import Title from "../../components/Title";
 import StarIcon from "@mui/icons-material/Star";
-import { HTMLAttributes } from "react";
-interface DivProps extends HTMLAttributes<HTMLDivElement> {
-  name?: string;
-}
+import { Element } from "react-scroll";
+
 const skillsLists = [
   "Good Communication Skills",
   "Critical Thinking & Problem Solving",
@@ -29,8 +27,8 @@ const skillsLists = [
 const Skills = () => {
   const { dark } = useApp();
   return (
-    <div
-      id="skills"
+    <Element
+      name="skills"
       className={`${styles.skills} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="My Skills" subTitle="Skills and Tools" />
@@ -61,7 +59,7 @@ const Skills = () => {
           </List>
         </Box>
       </section>
-    </div>
+    </Element>
   );
 };
 

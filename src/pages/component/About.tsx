@@ -3,12 +3,13 @@ import styles from "./styles.module.scss";
 import Abiola from "../../assets/Abiola.jpg";
 import useApp from "../../hooks/useApp";
 import Title from "../../components/Title";
+import { Element } from "react-scroll";
 
 const About = () => {
   const { dark } = useApp();
   return (
-    <div
-      id="about"
+    <Element
+      name="about"
       className={`${styles.about} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="About Me" subTitle="Get to know me" />
@@ -39,7 +40,7 @@ const About = () => {
           </Typography>
         </Box>
       </Box>
-    </div>
+    </Element>
   );
 };
 
