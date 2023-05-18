@@ -1,0 +1,26 @@
+@use '../styles/index.scss' as *;
+
+.footer {
+    width: 100%;
+    padding: 2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(map-get($dark-variant, '900'), 0.5);
+    @include sm() {
+        padding: 2rem 1rem;
+    }
+
+    &_social_icons {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+
+.light {
+    color: set-text-color(map-get($gray-variant, "100"));
+}
+
+.dark {
+    color: map-get($map: $gray-variant, $key: "500");
+}

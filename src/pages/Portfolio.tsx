@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import Footer from '../components/Footer';
 import About from './component/About';
 import Contact from './component/Contact';
 import Hero from './component/Hero';
@@ -16,6 +17,7 @@ const Portfolio = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 };

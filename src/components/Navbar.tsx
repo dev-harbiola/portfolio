@@ -5,6 +5,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import useApp from "../hooks/useApp";
 import { Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-scroll";
 
 const navLinks = [
@@ -31,13 +32,23 @@ const Navbar = () => {
               {!dark && <DarkModeIcon color="action" />}
               {dark && <LightModeIcon color="error" />}
             </Button>
-            <Button
+            {openSideBar ? (
+              <Button
+                color="error"
+                className={styles.menu_icon}
+                onClick={toggleSidebar}
+              >
+                <CloseIcon />
+              </Button>
+            ) : (
+              <Button
               color="error"
               className={styles.menu_icon}
               onClick={toggleSidebar}
-            >
+              >
               <MenuIcon />
-            </Button>
+              </Button>
+            )}
           </div>
         </div>
         <div className={`${openSideBar ? styles.menu_link : styles.hidden}`}>
