@@ -1,17 +1,20 @@
-import { Box, Link } from '@mui/material';
-import Title from '../../components/Title';
-import useApp from '../../hooks/useApp';
-import styles from './styles.module.scss';
-import { projects, techStack } from '../../data/projects';
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { Box, Link } from "@mui/material";
+import Title from "../../components/Title";
+import useApp from "../../hooks/useApp";
+import styles from "./styles.module.scss";
+import { projects, techStack } from "../../data/projects";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PreviewIcon from "@mui/icons-material/Preview";
 
 const Projects = () => {
   const { dark } = useApp();
   return (
-    <div className={`${styles.projects} ${dark ? styles.dark : styles.light}`}>
+    <div
+      id="projects"
+      className={`${styles.projects} ${dark ? styles.dark : styles.light}`}
+    >
       <Title title="My Projects" subTitle="This are some of my projects" />
       <Box className={styles.projects_container}>
         {projects.map((project) => (
@@ -33,12 +36,17 @@ const Projects = () => {
               {techStack(project.stack).map((stack: string) => (
                 <Stack
                   direction="row"
-                  m={.2}
+                  m={0.2}
                   mt={2}
                   spacing={2}
-                  display={'inline-flex'}
+                  display={"inline-flex"}
                 >
-                  <Chip label={stack} color="error" size="small" sx={{ cursor:'pointer' }} />
+                  <Chip
+                    label={stack}
+                    color="error"
+                    size="small"
+                    sx={{ cursor: "pointer" }}
+                  />
                 </Stack>
               ))}
               <div></div>

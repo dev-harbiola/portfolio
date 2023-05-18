@@ -1,17 +1,20 @@
-import { Box } from '@mui/material';
-import styles from './styles.module.scss';
-import Title from '../../components/Title';
-import useApp from '../../hooks/useApp';
-import WebDev from '../../assets/app-development.png';
-import webMaintain from '../../assets/web-maintenance.png';
-import DbMange from '../../assets/database-management.png';
-import webHost from '../../assets/hosting-services.png';
-import support from '../../assets/technical-support.png';
+import { Box } from "@mui/material";
+import styles from "./styles.module.scss";
+import Title from "../../components/Title";
+import useApp from "../../hooks/useApp";
+import WebDev from "../../assets/app-development.png";
+import webMaintain from "../../assets/web-maintenance.png";
+import DbMange from "../../assets/database-management.png";
+import webHost from "../../assets/hosting-services.png";
+import support from "../../assets/technical-support.png";
 
 const Services = () => {
   const { dark } = useApp();
   return (
-    <div className={`${styles.services} ${dark ? styles.dark : styles.light}`}>
+    <div
+      id="services"
+      className={`${styles.services} ${dark ? styles.dark : styles.light}`}
+    >
       <Title title="My Services" subTitle="What I can offer" />
 
       <div className={styles.services_group}>
@@ -25,7 +28,7 @@ const Services = () => {
           </p>
         </Box>
         <Box className={styles.services_card}>
-        <img src={DbMange} alt="" />
+          <img src={DbMange} alt="" />
           <h3>Database management</h3>
           <p>
             developing, maintaining, and optimizing databases to support website
@@ -33,7 +36,7 @@ const Services = () => {
           </p>
         </Box>
         <Box className={styles.services_card}>
-        <img src={webHost} alt="" />
+          <img src={webHost} alt="" />
           <h3>Web Hosting</h3>
           <p>
             setting up, configuring, and managing web hosting accounts for
@@ -41,7 +44,7 @@ const Services = () => {
           </p>
         </Box>
         <Box className={styles.services_card}>
-        <img src={webMaintain} alt="" />
+          <img src={webMaintain} alt="" />
           <h3>Website Maintainance</h3>
           <p>
             Website maintenance: providing ongoing updates, backups, security
@@ -49,7 +52,7 @@ const Services = () => {
           </p>
         </Box>
         <Box className={styles.services_card}>
-        <img src={support} alt="" />
+          <img src={support} alt="" />
           <h3>Technical Consulting</h3>
           <p>
             offering technical guidance and advice to clients on web-related

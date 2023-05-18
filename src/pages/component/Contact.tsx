@@ -57,6 +57,7 @@ const Contact = () => {
 
   return (
     <section
+    id="contact"
       className={`${styles.contact} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="Contact Me" subTitle="Get in touch" />

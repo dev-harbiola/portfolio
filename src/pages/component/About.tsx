@@ -1,13 +1,16 @@
-import { Box, Typography } from '@mui/material';
-import styles from './styles.module.scss';
-import Abiola from '../../assets/Abiola.jpg';
-import useApp from '../../hooks/useApp';
-import Title from '../../components/Title';
+import { Box, Typography } from "@mui/material";
+import styles from "./styles.module.scss";
+import Abiola from "../../assets/Abiola.jpg";
+import useApp from "../../hooks/useApp";
+import Title from "../../components/Title";
 
 const About = () => {
   const { dark } = useApp();
   return (
-    <div className={`${styles.about} ${dark ? styles.dark : styles.light}`}>
+    <div
+      id="about"
+      className={`${styles.about} ${dark ? styles.dark : styles.light}`}
+    >
       <Title title="About Me" subTitle="Get to know me" />
       <Box className={styles.about_container}>
         <Box className={styles.about_image}>

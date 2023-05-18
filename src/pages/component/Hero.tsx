@@ -22,7 +22,7 @@ const Hero = () => {
         delaySpeed: 1000,
       });
   return (
-    <div className={`${styles.hero} ${dark ? styles.dark : styles.light}`}>
+    <div id="home" className={`${styles.hero} ${dark ? styles.dark : styles.light}`}>
        <Box className={styles.hero_align}>
        <Box  className={styles.hero_text}>
        <h5>Hello I'm</h5>
