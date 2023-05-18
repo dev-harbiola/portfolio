@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Avenir-regular'),
+    url('../assets/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf')
+      format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/Poppins/Poppins-Regular.ttf') format('ttf');
+}
+
+$poppins: 'Poppins', sans-serif;
+$avenir-medium: 'Avenir-medium', sans-serif;
+$avenir-bold: 'Avenir-bold', sans-serif;
+$work-sans: 'Work Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+
+// import '@fontsource/roboto/300.css';
+// import '@fontsource/roboto/400.css';
+
+// import '@fontsource/roboto/700.css';
+

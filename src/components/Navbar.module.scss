@@ -1,0 +1,82 @@
+@use '../styles/index.scss' as *;
+
+
+.navbar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    max-width: 1440px;
+    margin: auto;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+   
+    .menu {
+        display: flex;
+        padding: 1.5rem 7rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+       
+        &_icon {
+            display: none;
+        }
+
+        &_title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &_link {
+            display: flex;
+            column-gap: 3rem;
+            align-items: center;
+        }
+    }
+
+    @include sm() {
+        max-width: 100%;
+        .menu {
+            display: flex;
+        padding: 0rem;
+        width: 100%;
+        justify-content: none;
+        align-items: start;
+        flex-direction: column;
+        &_icon {
+            display: flex;
+        }
+        &_logo {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        &_link {
+            width: 60%;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            align-items: start;
+            background-color: rgba(map-get($dark-variant, '700'), 0.9);
+            padding: 3rem 1rem 0 1rem;
+            height: 100vh;
+        }
+        }
+    }
+}
+
+.light {
+    background-color: rgba(map-get($gray-variant, '100'), 0.9);
+    color: set-text-color(map-get($gray-variant, '100'));
+    width: 100%;
+}
+
+.dark {
+    background-color: rgba(map-get($dark-variant, '900'), 0.9);
+    color: map-get($map: $gray-variant, $key: '500');
+    width: 100%;
+}

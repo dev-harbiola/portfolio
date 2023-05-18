@@ -1,0 +1,34 @@
+@use '../styles/index.scss' as *;
+
+.dark {
+    color: map-get($gray-variant, '300');
+}
+
+.light {
+    color: map-get($dark-variant, '800');
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    &_subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+
+        .line_left {
+            width: 50px;
+            border: 1px solid $error;
+        }
+        .line_right {
+            width: 50px;
+            border: 1px solid $error;
+        }
+    }
+}
