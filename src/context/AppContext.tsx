@@ -3,6 +3,8 @@ import React, { useState, useEffect, createContext } from 'react';
 type AppTypes = {
   toggleTheme: () => void;
   dark: boolean;
+  openSideBar: boolean;
+  toggleSidebar: () => void;
 };
 
 interface AppProviderProps {
@@ -17,6 +19,12 @@ export const AppProvider = ({ children }: AppProviderProps) => {
     return storedTheme ? JSON.parse(storedTheme) : true;
   });
 
+  const [openSideBar, setOpenSideBar] = useState<boolean>(false);
+  const toggleSidebar = () => {
+    setOpenSideBar(openSideBar => !openSideBar);
+  }
+
+
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(dark));
   }, [dark]);
@@ -26,7 +34,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
   };
 
   return (
-    <AppContext.Provider value={{ dark, toggleTheme }}>
+    <AppContext.Provider value={{ dark, toggleTheme,openSideBar, toggleSidebar }}>
       {children}
     </AppContext.Provider>
   );

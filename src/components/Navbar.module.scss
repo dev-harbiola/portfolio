@@ -1,5 +1,4 @@
-@use '../styles/index.scss' as *;
-
+@use "../styles/index.scss" as *;
 
 .navbar {
     width: 100%;
@@ -11,72 +10,84 @@
     display: flex;
     align-items: center;
     z-index: 2;
-   
+
+    .hidden {
+        display: flex;
+    }
+    .active {
+        display: flex;
+    }
     .menu {
         display: flex;
         padding: 1.5rem 7rem;
         width: 100%;
         justify-content: space-between;
         align-items: center;
-       
-        &_icon {
-            display: none;
-        }
+    }
 
-        &_title {
-            font-size: 24px;
-            font-weight: 600;
-        }
+    .menu_icon {
+        display: none;
+    }
 
-        &_link {
-            display: flex;
-            column-gap: 3rem;
-            align-items: center;
-        }
+    .menu_title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .menu_link, .hidden {
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
     }
 
     @include sm() {
         max-width: 100%;
+        .hidden {
+            display: none;
+        }
+        .active {
+            display: flex;
+        }
         .menu {
             display: flex;
-        padding: 0rem;
-        width: 100%;
-        justify-content: none;
-        align-items: start;
-        flex-direction: column;
-        &_icon {
-            display: flex;
-        }
-        &_logo {
+            padding: 0rem;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-        }
-        &_link {
-            width: 60%;
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            row-gap: 1.5rem;
+            justify-content: none;
             align-items: start;
-            background-color: rgba(map-get($dark-variant, '700'), 0.9);
-            padding: 3rem 1rem 0 1rem;
-            height: 100vh;
-        }
+            flex-direction: column;
+            &_icon {
+                display: flex;
+            }
+            &_logo {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+            }
+            &_link {
+                width: 60%;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                row-gap: 1.5rem;
+                align-items: start;
+                background-color: rgba(map-get($dark-variant, "700"), 0.9);
+                padding: 3rem 1rem 0 1rem;
+                height: 100vh;
+            }
         }
     }
 }
 
 .light {
-    background-color: rgba(map-get($gray-variant, '100'), 0.9);
-    color: set-text-color(map-get($gray-variant, '100'));
+    background-color: rgba(map-get($gray-variant, "100"), 0.9);
+    color: set-text-color(map-get($gray-variant, "100"));
     width: 100%;
 }
 
 .dark {
-    background-color: rgba(map-get($dark-variant, '900'), 0.9);
-    color: map-get($map: $gray-variant, $key: '500');
+    background-color: rgba(map-get($dark-variant, "900"), 0.9);
+    color: map-get($map: $gray-variant, $key: "500");
     width: 100%;
 }
