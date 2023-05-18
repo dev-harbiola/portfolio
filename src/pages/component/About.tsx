@@ -1,12 +1,25 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import styles from "./styles.module.scss";
 import Abiola from "../../assets/Abiola.jpg";
 import useApp from "../../hooks/useApp";
 import Title from "../../components/Title";
 import { Element } from "react-scroll";
+import { about, cv_url } from "../../data/socials";
+import { useState } from "react";
 
 const About = () => {
   const { dark } = useApp();
+  const [step, setStep] = useState(2);
+  const increaseStep = () => {
+    if (step <= about.length) {
+      setStep((step) => step + 1);
+    }
+  };
+  const reduceStep = () => {
+    if (step !== 1) {
+      setStep((step) => step - 1);
+    }
+  };
   return (
     <Element
       name="about"
@@ -18,26 +31,26 @@ const About = () => {
           <img src={Abiola} alt="" />
         </Box>
         <Box className={styles.about_detail}>
-          <Typography component="p">
-            Welcome to my portfolio! I'm Abiola Fasanya, a full-stack developer
-            who loves building beautiful and functional web apps. I specialize
-            in MERN stack (MongoDB, Express, React, Node.js), Next.js, and
-            Laravel, which enables me to create high-quality apps tailored to
-            your needs.
-          </Typography>
-          <Typography component="p">
-            I believe in collaboration and communication. By working closely
-            with clients and understanding their vision, I deliver creative
-            solutions that exceed expectations. My approach is both thoughtful
-            and creative, resulting in functional and visually appealing
-            projects.
-          </Typography>
-          <Typography component="p">
-            I specialize in building custom e-commerce platforms, content
-            management systems, and complex web applications. With the right
-            expertise and tools, I can bring your ideas to life and create
-            something amazing. Let's work together!
-          </Typography>
+          <div>
+            {about.slice(0, step).map((info) => (
+              <Typography component="p" key={info.id}>
+                {info.content}
+              </Typography>
+            ))}
+
+            <div className={styles.btn_direction}>
+              <Button onClick={() => reduceStep()}>See Less</Button>
+              <Button onClick={() => increaseStep()}>See More</Button>
+            </div>
+          </div>
+          <Button
+            color="error"
+            variant="contained"
+            sx={{ height: "40px", minWidth: "150px" }}
+            onClick={() => window.open(cv_url)}
+          >
+            Check my CV
+          </Button>
         </Box>
       </Box>
     </Element>

@@ -195,6 +195,12 @@
     width: 100%;
     padding-top: 5rem;
 
+    .btn_direction {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
     &_title {
         position: relative;
         text-align: center;
@@ -251,7 +257,6 @@
     }
 
     &_detail {
-
         p {
             margin: 1rem 0;
             @include sm() {

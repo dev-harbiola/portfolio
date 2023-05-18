@@ -19,7 +19,7 @@ const Projects = () => {
       <Title title="My Projects" subTitle="This are some of my projects" />
       <Box className={styles.projects_container}>
         {projects.map((project) => (
-          <Box className={styles.projects_card}>
+          <Box key={project.id} className={styles.projects_card}>
             <div className={styles.projects_image}>
               <img src={project.image} alt="" />
               <div className={styles.projects_links}>
@@ -36,6 +36,7 @@ const Projects = () => {
               <p>{project.description}</p>
               {techStack(project.stack).map((stack: string) => (
                 <Stack
+                  key={stack}
                   direction="row"
                   m={0.2}
                   mt={2}
