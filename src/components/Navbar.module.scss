@@ -16,15 +16,8 @@
         padding: 5px;
         border-top: 1px solid transparent;
         border-bottom: 1px solid transparent;
-
-        &:hover {
-            border-top: 1px solid $red;
-            border-bottom: 1px solid $red;
-        }
     }
     .active_link {
-        border-top: 1px solid $red;
-        border-bottom: 1px solid $red;
         transition: 0.3s ease-in-out;
     }
 
@@ -117,10 +110,34 @@
         color: map-get($gray-variant, "100");
     }
     width: 100%;
+
+    .link {
+        &:hover {
+            border-top: 1px solid $red;
+            border-bottom: 1px solid $red;
+        }
+    }
+    .active_link {
+        border-top: 1px solid $red;
+        border-bottom: 1px solid $red;
+        transition: 0.3s ease-in-out;
+    }
 }
 
 .dark {
     background-color: rgba(map-get($dark-variant, "900"), 0.9);
     color: map-get($map: $gray-variant, $key: "500");
     width: 100%;
+
+    .link {
+        &:hover {
+            border-top: 1px solid map-get($gray-variant, "300");
+            border-bottom: 1px solid map-get($gray-variant, "300");
+        }
+    }
+    .active_link {
+        border-top: 1px solid map-get($gray-variant, "300");
+        border-bottom: 1px solid map-get($gray-variant, "300");
+        transition: 0.3s ease-in-out;
+    }
 }

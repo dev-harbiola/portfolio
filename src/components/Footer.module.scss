@@ -18,9 +18,11 @@
 
 
 .light {
-    color: set-text-color(map-get($gray-variant, "100"));
+    color: set-text-color(map-get($gray-variant, '500'));
+    background-color: rgba(map-get($gray-variant, '500'), 0.5);
 }
 
 .dark {
     color: map-get($map: $gray-variant, $key: "500");
+    background-color: rgba(map-get($dark-variant, '900'), 0.5);
 }
