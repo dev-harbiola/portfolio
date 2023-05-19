@@ -5,8 +5,8 @@ import Title from "../../components/Title";
 import useApp from "../../hooks/useApp";
 import styles from "./styles.module.scss";
 import contactUs from "../../assets/contactUs.jpg";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Element } from "react-scroll";
 
 const Contact = () => {
@@ -19,17 +19,17 @@ const Contact = () => {
   const handleForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const target = e.target as HTMLInputElement & {
-      email: {value: string},
-      name: {value: string},
-      message: {value: string}
+      email: { value: string };
+      name: { value: string };
+      message: { value: string };
     };
     const body = {
       name: nameInput.current?.value,
       email: emailInput.current?.value,
-      message: messageInput.current?.value
+      message: messageInput.current?.value,
     };
     if (body.name === "" || body.email === "" || body.message === "") {
-      toast.error('Please fill in all fields')
+      toast.error("Please fill in all fields");
       return;
     }
 
@@ -47,7 +47,7 @@ const Contact = () => {
           target.name.value = "";
           target.email.value = "";
           target.message.value = "";
-          toast.success('Your message was successfully sent.');
+          toast.success("Your message was successfully sent.");
         },
         (error) => {
           console.log(error.text);
@@ -58,7 +58,7 @@ const Contact = () => {
 
   return (
     <Element
-    name="contact"
+      name="contact"
       className={`${styles.contact} ${dark ? styles.dark : styles.light}`}
     >
       <Title title="Contact Me" subTitle="Get in touch" />
@@ -85,7 +85,7 @@ const Contact = () => {
               </p>
               <div className={styles.contact_biz_links}>
                 <Link
-                  href="mailto:harbiola78@gmail.com"
+                  href="mailto:harbiola78@gmail.com?subject=Let's Discuss Your Needs"
                   variant="button"
                   color="error"
                   target="_blank"
