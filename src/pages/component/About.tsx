@@ -1,10 +1,10 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import styles from "./styles.module.scss";
 import Abiola from "../../assets/Abiola.jpg";
 import useApp from "../../hooks/useApp";
 import Title from "../../components/Title";
 import { Element } from "react-scroll";
-import { about, cv_url } from "../../data/socials";
+import { Socials, about, cv_url } from "../../data/socials";
 import { useState } from "react";
 
 const About = () => {
@@ -39,8 +39,22 @@ const About = () => {
             ))}
 
             <div className={styles.btn_direction}>
-              <Button onClick={() => reduceStep()}>See Less</Button>
-              <Button onClick={() => increaseStep()}>See More</Button>
+              <div className={styles.social_icons}>
+                {Socials.map((social) => (
+                  <Link key={social.name} href={social.url} color={"inherit"}>
+                    <social.icon name={social.name} />
+                  </Link>
+                ))}
+              </div>
+
+              <div>
+                <Button color="error" onClick={() => reduceStep()}>
+                  See Less
+                </Button>
+                <Button color="error" onClick={() => increaseStep()}>
+                  See More
+                </Button>
+              </div>
             </div>
           </div>
           <Button
