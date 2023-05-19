@@ -14,7 +14,7 @@ export const Socials = [
   },
   {
     name: "Email",
-    url: "mailto:harbiola78@gmail.com?Let_discuss_business",
+    url: "mailto:harbiola78@gmail.com?subject=Let's Discuss Your Needs",
     icon: MailOutline,
   },
 ];
