@@ -43,7 +43,9 @@ const Hero = () => {
           </Link>
         </Box>
         <Box className={styles.hero_image}>
-          <img src={Abiola} alt="image" />
+          <picture>
+            <img loading="lazy" src={Abiola} alt="image of abiola" />
+          </picture>
         </Box>
       </Box>
     </Element>

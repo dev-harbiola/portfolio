@@ -10,7 +10,12 @@ const Footer = () => {
       <div>Abiola Fasanya &copy; {new Date(Date.now()).getFullYear()}</div>
       <div className={styles.footer_social_icons}>
         {Socials.map((social) => (
-          <Link key={social.name} href={social.url} color={'inherit'}>
+          <Link
+            key={social.name}
+            href={social.url}
+            about={social.name}
+            color={"inherit"}
+          >
             <social.icon name={social.name} />
           </Link>
         ))}

@@ -28,7 +28,9 @@ const About = () => {
       <Title title="About Me" subTitle="Get to know me" />
       <Box className={styles.about_container}>
         <Box className={styles.about_image}>
-          <img src={Abiola} alt="" />
+          <picture>
+            <img loading="lazy" src={Abiola} alt="image of abiola" />
+          </picture>
         </Box>
         <Box className={styles.about_detail}>
           <div>
@@ -41,7 +43,7 @@ const About = () => {
             <div className={styles.btn_direction}>
               <div className={styles.social_icons}>
                 {Socials.map((social) => (
-                  <Link key={social.name} href={social.url} color={"inherit"}>
+                  <Link key={social.name} href={social.url} about={social.name} color={"inherit"}>
                     <social.icon name={social.name} />
                   </Link>
                 ))}
