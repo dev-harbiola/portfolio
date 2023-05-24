@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Portfolio from './pages/Portfolio'
 import './App.scss'
+import { Box } from '@mui/material'
+import useApp from './hooks/useApp'
 
 function App() {
-
+const {dark} = useApp()
   return (
-    <React.Fragment>
+    <Box className={dark ? 'dark': 'light'}>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
@@ -15,7 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </React.Fragment>
+    </Box>
   )
 }
 
