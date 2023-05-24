@@ -23,7 +23,7 @@ const Services = () => {
           <img src={WebDev} alt="" />
           <h3>Website Development</h3>
           <p>
-            Using ReactJs, NextJs, NodeJs, and Golang, to develop web
+            Using ReactJs, Laravel, NodeJs, and Golang, to develop web
             applications with custom features that work seamlessly across
             different devices and browsers.
           </p>
