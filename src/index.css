@@ -46,12 +46,7 @@ html {
 }
 
 body {
-  font-family: var(--plus-jakarta-sans-font);
-  min-height: 100vh;
-  max-width: 1920px;
-  margin: 0 auto;
-  font-size: 16px;
-  background-color: #f8f7fe;
+  @apply font-montserrat min-h-screen max-w-[1920px] m-auto text-base bg-zinc-400;
 }
 
 a {

@@ -1,6 +1,9 @@
 import bitmovie from "../assets/bitmovies.png";
 import lms from "../assets/lms.png";
 import eshop from "../assets/eshop.png";
+import fastbier from "../assets/fastbier.png";
+import lendsqr from "../assets/lendsqr.png";
+import tourism from "../assets/tourism.png";
 
 const projects = [
   {
@@ -40,6 +43,44 @@ const projects = [
     },
     stack: "React, Sass, Express, MongoDB",
     image: eshop,
+  },
+
+  {
+    id: 4,
+    name: "Fastbier Home",
+    description:
+      "Real Estate, property business, dealing with buying or renting a house",
+    link: {
+      preview: "https://fastbier.vercel.app/",
+      github: "https://github.com/abiolafasanya/fastbier",
+    },
+    stack: "NextJs, Tailwindcss, Javascript",
+    image: fastbier,
+  },
+
+  {
+    id: 5,
+    name: "Lendsqr user detail application",
+    description: "Lendsqr App: Access Mock User Details with Ease",
+    link: {
+      preview: "https://abiola-fasanya-lendsqr-fe-test.netlify.app/",
+      github: "https://github.com/abiolafasanya/lendsqr-fe-test",
+    },
+    stack: "ReactJs, Sass, Typescript, Mock Api",
+    image: lendsqr,
+  },
+
+
+  {
+    id: 6,
+    name: "Tourism App",
+    description: "Travel Odyssey App: Serendipitously Unearthing Fascinating Science and Technology Events",
+    link: {
+      preview: "https://tourism-jnc726k2r-fastbeetech.vercel.app/",
+      github: "https://github.com/abiolafasanya/tourism/",
+    },
+    stack: "ReactJs, Sass, Typescript, Mock Api",
+    image: tourism,
   },
 ];
 
