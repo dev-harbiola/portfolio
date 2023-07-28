@@ -1,13 +1,12 @@
-import styles from './Title.module.scss';
 
 const Title = (text: { title: string; subTitle: string }) => {
   return (
-    <div className={styles.about}>
-      <h2 className={styles.about_title}>{text.title}</h2>
-      <section className={styles.about_subtitle}>
-        <div className={styles.line_left}></div>
-        <div className={styles.about_subtitle}>{text.subTitle}</div>
-        <div className={styles.line_right}></div>
+    <div className={`w-full flex items-center justify-center flex-col gap-4`}>
+      <h2 className={'text-3xl'}>{text.title}</h2>
+      <section className={'flex items-center justify-center gap-2'}>
+        <div className={'w-[50px] border-2 border-emerald-500'}></div>
+        <div className={'flex items-center justify-center gap-2'}>{text.subTitle}</div>
+        <div className={'w-[50px] border-2 border-emerald-500'}></div>
       </section>
     </div>
   );

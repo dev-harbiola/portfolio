@@ -1,23 +1,17 @@
-// import React from 'react'
-
-import Footer from '../components/Footer';
-import About from './component/About';
-import Contact from './component/Contact';
-import Hero from './component/Hero';
-import Projects from './component/Projects';
-import Services from './component/Services';
-import Skills from './component/Skills';
+import About from "./about/About";
+import Contact from "./contact/Contact";
+import Hero from "./hero/Hero";
+import Project from "./projects/Project";
+import Services from "./services/Services";
 
 const Portfolio = () => {
   return (
     <main>
       <Hero />
       <About />
+      <Project />
       <Services />
-      <Skills />
-      <Projects />
       <Contact />
-      <Footer />
     </main>
   );
 };
