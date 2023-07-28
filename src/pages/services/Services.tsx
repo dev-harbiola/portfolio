@@ -29,7 +29,7 @@ const Services = () => {
             <Card key={service.id} {...service} />
           ))}
         </section>
-        <Marquee>
+        <Marquee pauseOnClick pauseOnHover speed={10}>
           <Skills />
         </Marquee>
       </motion.div>
