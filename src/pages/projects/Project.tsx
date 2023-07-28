@@ -20,9 +20,9 @@ const projectVariant = {
 
 const Project = () => {
   return (
-    <Element name="projects" className="sm:px-5 lg:px-0">
-      <Title title="My Projects" subTitle="This are some of my projects" />
-      <div className="min-h-screen w-full mt-36">
+    <Element name="projects" className="sm:px-5 lg:px-0 mt-40">
+      <Title title="My Projects" subTitle="These are some of my projects" />
+      <div className="min-h-screen w-full mt-20">
         <motion.section
           className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20"
           initial="hidden"

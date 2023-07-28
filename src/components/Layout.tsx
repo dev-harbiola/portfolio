@@ -1,6 +1,4 @@
 import { Outlet } from "react-router-dom";
-// import Navbar from "./Navbar";
-// import styles from './Layout.module.scss';
 import useApp from "../hooks/useApp";
 import clsx from "clsx";
 import React, { useEffect, useState } from "react";
@@ -46,6 +44,5 @@ const Layout = ({ variant }: Props) => {
     </React.Fragment>
   );
 };
-// `${styles.layout} ${dark ? styles.dark : styles.light}`
 
 export default Layout;

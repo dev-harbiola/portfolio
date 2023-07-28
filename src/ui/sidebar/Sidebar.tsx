@@ -15,7 +15,7 @@ const Sidebar = ({
     <aside
       className={`${
         isOpen ? "sm:flex lg:hidden -translate-x-0" : "-translate-x-full  "
-      } fixed w-full bg-black right-0 top-0 min-h-screen bg-opacity-70 z-50 ease-in-out duration-300`}
+      } lg:hidden fixed w-full bg-black right-0 top-0 min-h-screen bg-opacity-70 z-50 ease-in-out duration-300`}
     >
       <div className="bg-zinc-900">
         <div className="flex justify-between items-center py-3 px-5">

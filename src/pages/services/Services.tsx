@@ -48,7 +48,7 @@ const Card = (service: ServiceType) => {
       variants={serviceVariant}
       className="mt-10 w-full border border-zinc-700 hover:border-zinc-500 transition duration-500 ease-in-out rounded-lg p-5 flex items-center justify-center text-center flex-col gap-3"
     >
-      <img src={service.image} alt="" className="w-[100px]" />
+      <img src={service.image} alt="" className="w-[64px]" />
       <h3 className="capitalize">{service.name}</h3>
       <p className="capitalize">{service.description}</p>
     </motion.article>

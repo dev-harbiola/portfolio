@@ -62,7 +62,7 @@ const Contact = () => {
         <article className="flex sm:flex-col-reverse sm:gap-10 lg:gap-0 lg:flex-row justify-between w-full">
           <div className="flex flex-col gap-10">
             <h2 className="text-4xl font-montalt">Lets Connect</h2>
-            <section className="flex gap-4 sm:flex-row md:flex-col">
+            <section className="flex gap-4 flex-col">
               <div className="text-zinc-200">
                 <h5>habiolafasanya@gmail.com</h5>
                 <h5>+2348102307473</h5>
