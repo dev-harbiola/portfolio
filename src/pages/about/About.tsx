@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 import { Element } from "react-scroll";
+import MyPics from '../../assets/Abiola-hd.jpg'
 
 const About = () => {
   const [step, setStep] = useState(1);
@@ -24,7 +25,7 @@ const About = () => {
       <Title title="About Me" subTitle="Get to know me" />
       <div className="sm:mt-40 w-full sm:px-5 lg:mt-0 md:px-0 flex sm:flex-col lg:flex-row justify-between min-h-screen sm:mb-40 items-center ">
         <div className="hidden md:flex w-[350px] box-border overflow-hidden rounded-lg">
-          <img src="/public/Abiola-hd.jpg" alt="abiola fasanya" />
+          <img src={MyPics} alt="abiola fasanya" />
         </div>
         <div className="w-full">
           <Box className="flex flex-col gap-4 mt-10 max-w-2xl ml-auto">

@@ -2,6 +2,7 @@ import Button from "../../components/button/Button";
 import { Socials } from "../../data/socials";
 import { Link } from "react-router-dom";
 import { Element, Link as ScrollTo } from "react-scroll";
+import MyPics from '../../assets/Abiola-hd.jpg';
 
 const Hero = () => {
   return (
@@ -26,7 +27,7 @@ const Hero = () => {
         </div>
         <div className="rounded-full border-2 box-border w-full max-w-[250px] max-h-[250px] overflow-hidden">
           <img
-            src="/public/Abiola-hd.jpg"
+            src={MyPics}
             alt="abiola fasanya"
             className="w-full h-full object-cover object-center"
           />
