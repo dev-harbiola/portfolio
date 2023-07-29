@@ -1,5 +1,4 @@
 import { Socials } from "../../data/socials";
-import { Link } from "react-router-dom";
 import Button from "../../components/button/Button";
 import { Element } from "react-scroll";
 import Title from "../../components/Title";
@@ -7,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {Link} from 'react-router-dom'
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -64,8 +64,13 @@ const Contact = () => {
             <h2 className="text-4xl font-montalt">Lets Connect</h2>
             <section className="flex gap-4 flex-col">
               <div className="text-zinc-200">
-                <h5>habiolafasanya@gmail.com</h5>
-                <h5>+2348102307473</h5>
+                <Link className="block text-white" to="mailto:harbiola78@gmail.com">
+                  harbiola78@gmail.com
+                </Link>
+
+                <Link className="block" to="tel:+2348102307473 ">
+                  +2348102307473
+                </Link>
               </div>
               <div className={"flex gap-x-2"}>
                 {Socials.map((social) => (
