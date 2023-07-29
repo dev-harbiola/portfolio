@@ -20,7 +20,7 @@ const Services = () => {
         className="min-h-screen w-full flex items-center justify-center flex-col gap-24"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        // viewport={{ once: true, amount: 0.5 }}
         variants={containerVariant}
       >
         <ServiceCard />
