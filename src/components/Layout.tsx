@@ -18,7 +18,7 @@ const Layout = ({ variant }: Props) => {
     setIsloading(true);
     setTimeout(() => {
       setIsloading(false);
-    }, 5000);
+    }, 3000);
     const current = true ? "dark" : "light";
     setTheme(current);
   }, [dark]);
