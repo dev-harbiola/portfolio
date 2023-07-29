@@ -1,20 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './components/Layout'
-import Portfolio from './pages/Portfolio'
-import { Box } from '@mui/material'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
-    <Box className={''}>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path='/' element={<Portfolio />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </Box>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Portfolio />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

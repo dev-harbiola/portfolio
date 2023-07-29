@@ -3,7 +3,7 @@ import Button from "../../components/button/Button";
 import { Element } from "react-scroll";
 import Title from "../../components/Title";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {Link} from 'react-router-dom'
@@ -138,7 +138,18 @@ const Contact = () => {
   );
 };
 
-const TextField = ({ ...props }) => {
+type FieldProps = {
+  id: string;
+  label: string;
+  placeholder: string;
+  name?: string;
+  type?: string;
+  children?: React.ReactNode;
+  required?: boolean;
+}
+
+const TextField = React.forwardRef<HTMLInputElement, FieldProps>((props, ref) => {
+  const { label, ...rest } = props;
   return (
     <div className="w-full bg-blend-normal">
       <label
@@ -146,29 +157,26 @@ const TextField = ({ ...props }) => {
         className="relative w-full group bg-blend-normal"
       >
         <input
-          {...props}
-          id={props.id}
-          required
-          ref={props.ref}
+          {...rest}
+          ref={ref}
           className="py-3 px-5 w-full flex bg-transparent transition duration-200 border rounded-lg border-zinc-200 focus:border-emerald-500 bg-none focus:text-zinc-200 border-opacity-50 outline-none"
         />
         <span className="absolute input-text -top-3 left-5 bg-zinc-900 transition duration-200">
-          {props.label}
+          {props.name}
         </span>
       </label>
     </div>
   );
-};
+});
 
-const TextArea = ({ ...props }) => {
+const TextArea = React.forwardRef<HTMLTextAreaElement, FieldProps>((props, ref) => {
+  const { label, ...rest } = props;
   return (
     <div className="flex w-full">
       <label htmlFor={props.id} className="relative w-full group">
         <textarea
-          {...props}
-          id={props.id}
-          ref={props.ref}
-          required
+          {...rest}
+          ref={ref}
           className="text-area py-3 px-5 w-full flex bg-transparent transition duration-200 border rounded-lg border-zinc-200 focus:border-emerald-500 focus:text-zinc-200 border-opacity-50 outline-none"
         >
           {props.children}
@@ -179,6 +187,6 @@ const TextArea = ({ ...props }) => {
       </label>
     </div>
   );
-};
+});
 
 export default Contact;

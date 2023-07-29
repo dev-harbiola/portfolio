@@ -14,17 +14,17 @@ const containerVariant = {
 
 const Project = () => {
   return (
-    <Element name="projects" className="sm:px-5 lg:px-0 mt-40">
+    <Element name="projects" className="sm:px-5 lg:px-0 mt-40 min-h-screen">
       <Title title="My Projects" subTitle="These are some of my projects" />
-      <div className="min-h-screen w-full mt-20">
+      <div className="w-full mt-20">
         <motion.section
-          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20"
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20 w-full h-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          // viewport={{once: true}}
           variants={containerVariant}
         >
-          {projects.map((project) => (
+          {projects.slice(0,6).map((project) => (
             <Card key={project.id} {...project} />
           ))}
         </motion.section>
