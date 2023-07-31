@@ -1,5 +1,4 @@
-import MyPics from "../../../assets/AB.png";
-// import MyPics from "../../../assets/Abiola-hd.jpg";
+import MyPics from "../../../assets/profile-pic (8).png";
 
 const ImageBox = () => {
   return (
@@ -7,7 +6,7 @@ const ImageBox = () => {
       <img
         src={MyPics}
         alt="abiola fasanya"
-        className="w-full h-full object-cover object-center"
+        className="w-full h-full object-cover object-center p-2"
       />
     </div>
   );
