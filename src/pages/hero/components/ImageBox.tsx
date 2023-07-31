@@ -1,4 +1,5 @@
-import MyPics from "../../../assets/Abiola-hd.jpg";
+import MyPics from "../../../assets/AB.png";
+// import MyPics from "../../../assets/Abiola-hd.jpg";
 
 const ImageBox = () => {
   return (
