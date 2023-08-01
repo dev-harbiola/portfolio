@@ -26,7 +26,8 @@ export const Socials = [
 ];
 
 export const cv_url =
-  "https://drive.google.com/file/d/1ppCSzMbR7zpqlef0ZF2BP95hC6b87SoC/view?usp=sharing";
+  "https://drive.google.com/file/d/1XTpL2WStwTDOSpDzAsQRl-r8Y1DlS5z1/view?usp=sharing";
+// "https://drive.google.com/file/d/1ppCSzMbR7zpqlef0ZF2BP95hC6b87SoC/view?usp=sharing";
 
 export const about = [
   {

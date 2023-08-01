@@ -26,7 +26,7 @@ const projects = [
       "Bit Movies is a movie listing application that lists movies, series, actors details and much more",
     link: {
       preview: "http://bitmovie.netlify.app/",
-      github: "https://github.com/dev-harbiola/bitmovie/",
+      github: "https://github.com/abiolafasanya/bitmovie/",
     },
     stack: "React, Sass, TMDB API",
     image: bitmovie,
@@ -39,7 +39,7 @@ const projects = [
       "Ecommerce service that provides products details, add to cart and  checkout functionality",
     link: {
       preview: "http://eshop-fashion.netlify.app/",
-      github: "github.com/dev-harbiola/estore",
+      github: "github.com/abiolafasanya/estore",
     },
     stack: "React, Sass, Express, MongoDB",
     image: eshop,
