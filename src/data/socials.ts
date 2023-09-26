@@ -33,7 +33,7 @@ export const about = [
   {
     id: 1,
     content: `
-    Greetings! I'm Abiola Fasanya, a passionate full-stack developer who thrives on hard work and dedication. My days are often filled with writing impressive React apps and APIs. When I'm not engrossed in coding, you'll find me researching the latest industry trends or serenading myself with the sweet melodies of the piano.
+    Greetings! I'm Abiola Fasanya, a passionate Frontend Engineer who thrives on hard work and dedication. My days are often filled with writing impressive React apps and APIs. When I'm not engrossed in coding, you'll find me researching the latest industry trends or serenading myself with the sweet melodies of the piano.
             `,
   },
   {
