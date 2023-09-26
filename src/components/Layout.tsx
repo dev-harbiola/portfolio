@@ -19,7 +19,7 @@ const Layout = () => {
         <Loader />
       ) : (
         <div className="w-full relative max-w-[1920px] font-montserrat bg-zinc-900 text-zinc-100">
-          <div className="fixed top-0 z-50 w-full bg-zinc-900">
+          <div className="fixed top-0 right-0 left-0 z-50 w-full bg-zinc-900">
             <Header />
           </div>
           <div className="md:max-w-3xl lg:max-w-6xl mx-auto">

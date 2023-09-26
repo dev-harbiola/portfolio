@@ -1,5 +1,5 @@
-import bitmovie from "../assets/bitmovies.png";
-import lms from "../assets/lms.png";
+import porchplus from "../assets/porchplus.png";
+import lms from "../assets/kodeinpired.png";
 import eshop from "../assets/eshop.png";
 import fastbier from "../assets/fastbier.png";
 import lendsqr from "../assets/lendsqr.png";
@@ -8,28 +8,28 @@ import tourism from "../assets/tourism.png";
 const projects = [
   {
     id: 1,
-    name: "TSCAPP",
+    name: "KodeInspired LMS",
     description:
-      "Tscapp is a learning management system, with features like assessment, courses, tasks, and much more cool stuffs",
+      "KodeInspired is an intuitive learning management system with user-friendly navigation, offering features like assessments, tasks, courses, and a communication section for interacting with tutors and peers.",
     link: {
-      preview: "https://lms-next-typescript.vercel.app/",
-      github: "#",
+      preview: "https://kodeinspired.vercel.app/",
+      github: "https://github.com/abiolafasanya/lms-system",
     },
-    stack: "NextJs, Prisma, MongoDB, NextAuth",
+    stack: "NextJs, Prisma, MongoDB, Clerk",
     image: lms,
   },
 
   {
     id: 2,
-    name: "BitMovies",
+    name: "Porchplus",
     description:
-      "Bit Movies is a movie listing application that lists movies, series, actors details and much more",
+      "Porchplus is a real estate platform for landlords to list and manage properties, connecting them with potential renters to secure apartments.",
     link: {
-      preview: "http://bitmovie.netlify.app/",
-      github: "https://github.com/abiolafasanya/bitmovie/",
+      preview: "https://demo.porchplus.com/",
+      github: "#available-on-request",
     },
-    stack: "React, Sass, TMDB API",
-    image: bitmovie,
+    stack: "NextJs, MongoDb, ExpressJs, TailwindCss",
+    image: porchplus,
   },
 
   {
