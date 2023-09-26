@@ -40,7 +40,7 @@ export const about = [
     id: 2,
     content: `
     <br />
-    <p className="transition ease-in-out duration-200">With over 4 years of professional experience in web development, I've embarked on an exciting journey, working on a diverse range of projects. From crafting e-commerce platforms to building engaging chat applications, and from creating efficient school management systems to exploring the world of real estate properties, my portfolio boasts an array of cool and innovative projects.</p>
+    <p className="transition ease-in-out duration-200">With over 3 years of professional experience in web development, I've embarked on an exciting journey, working on a diverse range of projects. From crafting e-commerce platforms to building engaging chat applications, and from creating efficient school management systems to exploring the world of real estate properties, my portfolio boasts an array of cool and innovative projects.</p>
             `,
   },
   {
