@@ -25,8 +25,8 @@ const projects = [
     description:
       "Porchplus is a real estate platform for landlords to list and manage properties, connecting them with potential renters to secure apartments.",
     link: {
-      preview: "https://demo.porchplus.com/",
-      github: "#available-on-request",
+      preview: "https://porchplus.com/",
+      github: "#",
     },
     stack: "NextJs, MongoDb, ExpressJs, TailwindCss",
     image: porchplus,
