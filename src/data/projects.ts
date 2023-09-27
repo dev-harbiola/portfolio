@@ -1,6 +1,6 @@
 import porchplus from "../assets/porchplus.png";
 import lms from "../assets/kodeinpired.png";
-import eshop from "../assets/eshop.png";
+import countries from "../assets/countries.png";
 import fastbier from "../assets/fastbier.png";
 import lendsqr from "../assets/lendsqr.png";
 import tourism from "../assets/tourism.png";
@@ -34,15 +34,15 @@ const projects = [
 
   {
     id: 3,
-    name: "Estore Ecommerce",
+    name: "Countries API",
     description:
-      "Ecommerce service that provides products details, add to cart and  checkout functionality",
+      "Frontend Mentor Challenge, On Listing Countries, Implemented with HTML5, CSS and JavaScript",
     link: {
-      preview: "http://eshop-fashion.netlify.app/",
-      github: "github.com/abiolafasanya/estore",
+      preview: "https://abiolafasanya.github.io/country-api/",
+      github: "https://github.com/abiolafasanya/country-api",
     },
-    stack: "React, Sass, Express, MongoDB",
-    image: eshop,
+    stack: "HTML, CSS and JavaScript",
+    image: countries,
   },
 
   {

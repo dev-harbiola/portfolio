@@ -15,7 +15,7 @@ export const Socials = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/harbiola78",
+    url: "https://twitter.com/abiola__fasanya",
     icon: CiTwitter,
   },
   {
