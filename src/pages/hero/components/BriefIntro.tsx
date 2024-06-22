@@ -11,7 +11,7 @@ const BriefIntro = () => {
         </h2>
       </div>
       <h4 className="md:text-xl text-emerald-500">
-        Frontend Engineer
+        Software Engineer
       </h4>
       <Link to="contact">
         <Button
