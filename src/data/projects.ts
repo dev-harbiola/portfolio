@@ -4,6 +4,7 @@ import countries from "../assets/countries.png";
 import fastbier from "../assets/fastbier.png";
 import lendsqr from "../assets/lendsqr.png";
 import tourism from "../assets/tourism.png";
+import dragbox from "../assets/dragbox.png"
 
 const projects = [
   {
@@ -47,15 +48,15 @@ const projects = [
 
   {
     id: 4,
-    name: "Fastbier Home",
+    name: "DragBox",
     description:
-      "Real Estate, property business, dealing with buying or renting a house",
+      "Image gallery built using React, Firebase, and other technologies. It includes features like a responsive carousel, thumbnail navigation, user authentication, and Firestore integration.",
     link: {
-      preview: "https://fastbier.vercel.app/",
-      github: "https://github.com/abiolafasanya/fastbier",
+      preview: "https://dragboxs.vercel.app/",
+      github: "https://github.com/abiolafasanya/dragbox",
     },
-    stack: "NextJs, Tailwindcss, Javascript",
-    image: fastbier,
+    stack: "NextJs, Tailwindcss, Firebase",
+    image: dragbox,
   },
 
   {
@@ -70,11 +71,11 @@ const projects = [
     image: lendsqr,
   },
 
-
   {
     id: 6,
     name: "Tourism App",
-    description: "Travel Odyssey App: Serendipitously Unearthing Fascinating Science and Technology Events",
+    description:
+      "Travel Odyssey App: Serendipitously Unearthing Fascinating Science and Technology Events",
     link: {
       preview: "https://tourism-jnc726k2r-fastbeetech.vercel.app/",
       github: "https://github.com/abiolafasanya/tourism/",
